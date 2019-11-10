@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="about.html">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__login login" href="login.html">Авторизация</a>
+        </li>
+      </ul>
+      <div class="contacts">
+        <a class="contacts__phone" href="tel: +88005558628">8&nbsp;800&nbsp;555-86-28</a>
+        <a class="contacts__email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#" aria-label="Instagram"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="main-title">Попутчики</h1>
+    <section class="companions-catalog">
+      <h2 class="visually-hidden">Попутчики</h2>
+      <ul class="companions-catalog__list">
+        <li class="companions-catalog__item companions-catalog-item">
+          <div class="companions-catalog-item__image-wrapper">
+            <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+            <button class="companions-catalog-item__like"></button>
+          </div>
+          <div class="companions-catalog-item__name-wrapper">
+            <p class="companions-catalog-item__name">Таня Фирсова</p>
+            <p class="companions-catalog-item__likes">1,5 М</p>
+            <div class="companions-catalog-item__online"></div>
+          </div>
+          <p class="companions-catalog-item__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+          <ul class="companions-catalog-item__countries">
+            <li class="companions-catalog-item__country companions-catalog-item__country--sri">Шри-Ланка</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--tai">Тайланд</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--sey">Сейшелы</li>
+          </ul>
+          <div class="companions-catalog-item__tran-level-wrapper">
+            <div class="companions-catalog-item__tran-wrapper">
+              <p class="companions-catalog-item__transport-title">транспорт:</p>
+              <ul class="companions-catalog-item__transport-list">
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus" aria-label="Автобус"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              </ul>
+            </div>
+            <div class="companions-catalog-item__tran-level">
+              <p class="companions-catalog-item__level-title">левел:</p>
+              <div class="companions-catalog-item__level">
+                99
+              </div>
+            </div>
+          </div>
+          <button class="companions-catalog-item__call" type="button">Позвать!</button>
+        </li>
+        <li class="companions-catalog__item companions-catalog-item">
+          <div class="companions-catalog-item__image-wrapper">
+            <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+            <button class="companions-catalog-item__like"></button>
+          </div>
+          <div class="companions-catalog-item__name-wrapper">
+            <p class="companions-catalog-item__name">Петя Демин</p>
+            <p class="companions-catalog-item__likes">150</p>
+            <div class="companions-catalog-item__online"></div>
+          </div>
+          <p class="companions-catalog-item__tags">#бургер #бар #футбол #концерт #крафт</p>
+          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+          <ul class="companions-catalog-item__countries">
+            <li class="companions-catalog-item__country companions-catalog-item__country--bel">Бельгия</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--cze">Чехия</li>
+          </ul>
+          <div class="companions-catalog-item__tran-level-wrapper">
+            <div class="companions-catalog-item__tran-wrapper">
+              <p class="companions-catalog-item__transport-title">транспорт:</p>
+              <ul class="companions-catalog-item__transport-list">
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus companions-catalog-item__transport-item--active" aria-label="Автобус"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk companions-catalog-item__transport-item--active" aria-label="Пешком"></li>
+              </ul>
+            </div>
+            <div class="companions-catalog-item__tran-level">
+              <p class="companions-catalog-item__level-title">левел:</p>
+              <div class="companions-catalog-item__level">
+                80
+              </div>
+            </div>
+          </div>
+          <button class="companions-catalog-item__call" type="button">Позвать!</button>
+        </li>
+        <li class="companions-catalog__item companions-catalog-item">
+          <div class="companions-catalog-item__image-wrapper">
+            <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+            <button class="companions-catalog-item__like"></button>
+          </div>
+          <div class="companions-catalog-item__name-wrapper">
+            <p class="companions-catalog-item__name">Марк Смолов</p>
+            <p class="companions-catalog-item__likes">1700</p>
+            <div class="companions-catalog-item__online"></div>
+          </div>
+          <p class="companions-catalog-item__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+          <ul class="companions-catalog-item__countries">
+            <li class="companions-catalog-item__country companions-catalog-item__country--usa">США</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--aus">Австралия</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--dom">Доминикана</li>
+          </ul>
+          <div class="companions-catalog-item__tran-level-wrapper">
+            <div class="companions-catalog-item__tran-wrapper">
+              <p class="companions-catalog-item__transport-title">транспорт:</p>
+              <ul class="companions-catalog-item__transport-list">
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus" aria-label="Автобус"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy companions-catalog-item__transport-item--active" aria-label="Велосипед"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              </ul>
+            </div>
+            <div class="companions-catalog-item__tran-level">
+              <p class="companions-catalog-item__level-title">левел:</p>
+              <div class="companions-catalog-item__level">
+                25
+              </div>
+            </div>
+          </div>
+          <button class="companions-catalog-item__call" type="button">Позвать!</button>
+        </li>
+        <li class="companions-catalog__item companions-catalog-item">
+          <div class="companions-catalog-item__image-wrapper">
+            <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+            <button class="companions-catalog-item__like"></button>
+          </div>
+          <div class="companions-catalog-item__name-wrapper">
+            <p class="companions-catalog-item__name">Лариса Роговая</p>
+            <p class="companions-catalog-item__likes">23</p>
+            <div class="companions-catalog-item__online"></div>
+          </div>
+          <p class="companions-catalog-item__tags">#образование #карьера #учеба #линкедин
+          </p>
+          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+          <ul class="companions-catalog-item__countries">
+            <li class="companions-catalog-item__country companions-catalog-item__country--uk">Велиобритания</li>
+            <li class="companions-catalog-item__country companions-catalog-item__country--ger">Германия</li>
+          </ul>
+          <div class="companions-catalog-item__tran-level-wrapper">
+            <div class="companions-catalog-item__tran-wrapper">
+              <p class="companions-catalog-item__transport-title">транспорт:</p>
+              <ul class="companions-catalog-item__transport-list">
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus companions-catalog-item__transport-item--active" aria-label="Автобус"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
+                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              </ul>
+            </div>
+            <div class="companions-catalog-item__tran-level">
+              <p class="companions-catalog-item__level-title">левел:</p>
+              <div class="companions-catalog-item__level">
+                50
+              </div>
+            </div>
+          </div>
+          <button class="companions-catalog-item__call" type="button">Позвать!</button>
+        </li>
+      </ul>
+      <a class="companions-catalog__all" href="companions.html">Показать еще</a>
+      <div class="companions-catalog__pagination">
+        <button class="companions-catalog__prev" type="button" aria-label="Предыдущая страница"></button>
+        <button class="companions-catalog__next" type="button" aria-label="Следующая страница"></button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
+    </a>
+    <div class="social page-footer__social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" aria-label="Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#" aria-label="Instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span>Разработано</span>
+      <img src="https://via.placeholder.com/28x35" alt="HTML Academy лого" width="28" height="35">
+    </div>
+  </footer>
+  </body>
+</html>

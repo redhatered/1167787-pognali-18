@@ -10,7 +10,7 @@
       <img class="page-header__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">Переключить меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="about.html">О сервисе</a>
@@ -103,23 +103,23 @@
       <ul class="directions__list">
         <li class="directions__item directions-item directions-item--tai">
           <div class="directions-item__wrapper">
-            <p class="directions-item__country">Таиланд</p>
+            <h3 class="directions-item__country">Таиланд</h3>
             <p class="directions-item__title">Джунгли зовут!</p>
-            <div class="directions-item__counter">18321</div>
+            <span class="directions-item__counter">18321</span>
           </div>
         </li>
         <li class="directions__item directions-item directions-item--fr">
           <div class="directions-item__wrapper">
-            <p class="directions-item__country">Франция</p>
+            <h3 class="directions-item__country">Франция</h3>
             <p class="directions-item__title">Трэ бьен, манифик!</p>
-            <div class="directions-item__counter">12518</div>
+            <span class="directions-item__counter">12518</span>
           </div>
         </li>
         <li class="directions__item directions-item directions-item--cze">
           <div class="directions-item__wrapper">
-            <p class="directions-item__country">Чехия</p>
+            <h3 class="directions-item__country">Чехия</h3>
             <p class="directions-item__title">Закоулки старой Европы</p>
-            <div class="directions-item__counter">5326</div>
+            <span class="directions-item__counter">5326</span>
           </div>
         </li>
       </ul>
@@ -137,7 +137,7 @@
         <li class="companions__item companions-item">
           <img src="https://via.placeholder.com/270" width="270" height="270" alt="Компаньен">
           <div class="companions-item__wrapper">
-            <p class="companions-item__name">Таня Фирсова</p>
+            <h3 class="companions-item__name">Таня Фирсова</h3>
             <p class="companions-item__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <ul class="companions-item__countries">
               <li class="companions-item__country companions-item__country--sri" aria-label="Шри-Ланка"></li>
@@ -159,7 +159,7 @@
         <li class="companions__item companions-item">
           <img src="https://via.placeholder.com/270" width="270" height="270" alt="Компаньен">
           <div class="companions-item__wrapper">
-            <p class="companions-item__name">Петя Демин</p>
+            <h3 class="companions-item__name">Петя Демин</h3>
             <p class="companions-item__tags">#бургер #бар #футбол #концерт #крафт</p>
             <ul class="companions-item__countries">
               <li class="companions-item__country companions-item__country--bel" aria-label="Бельгия"></li>
@@ -180,25 +180,25 @@
       </ul>
       <a class="companions__all" href="catalog.html">Показать всех</a>
     </section>
-    <div class="add-profile">
-      <h2 class="visually-hidden">Добавьте свой профиль</h2>
-    </div>
     <section class="tariffs">
+      <div class="add-profile">
+        <h2>Добавьте свой профиль</h2>
+      </div>
       <ol class="tariffs__list">
         <li class="tariffs__item">
           Базовое размещение
-          <div class="tariffs__price">Бесплатно</div>
+          <span class="tariffs__price">Бесплатно</span>
         </li>
         <li class="tariffs__item">
           Вывод на первых позициях
-          <div class="tariffs__price">99 руб./мес</div>
+          <span class="tariffs__price">99 руб./мес</span>
         </li>
         <li class="tariffs__item">
           Кастомный цвет карточки
-          <div class="tariffs__price">59 руб./мес</div>
+          <span class="tariffs__price">59 руб./мес</span>
         </li>
       </ol>
-      <button type="button">Показать тарифы для бизнеса</button>
+      <a class="tariffs__all" href="tariffs.html">Показать тарифы для бизнеса</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -220,7 +220,9 @@
     </div>
     <div class="copyright">
       <span>Разработано</span>
-      <img src="https://via.placeholder.com/28x35" alt="HTML Academy лого" width="28" height="35">
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <img src="https://via.placeholder.com/28x35" alt="HTML Academy лого" width="28" height="35">
+      </a>
     </div>
   </footer>
   </body>

@@ -144,16 +144,16 @@
               <li class="companions-item__country companions-item__country--tai" aria-label="Тайланд"></li>
               <li class="companions-item__country companions-item__country--sey" aria-label="Сейшелы"></li>
             </ul>
-            <ul class="companions-item__transport-list">
-              <li class="companions-item__transport-item companions-item__transport-item--air companions-item__transport-item--active" aria-label="Самолет"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--bus" aria-label="Автобус"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--buy" aria-label="Велосипед"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--walk" aria-label="Пешком"></li>
+            <ul class="transport-list companions-item__transport-list">
+              <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+              <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
+              <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+              <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
             </ul>
           </div>
-          <div class="companions-item__level">
-            <span>99</span>
-            <span>level</span>
+          <div class="companions-item__level level">
+            <span class="level__percent">99</span>
+            <span class="level__text">level</span>
           </div>
         </li>
         <li class="companions__item companions-item">
@@ -165,16 +165,16 @@
               <li class="companions-item__country companions-item__country--bel" aria-label="Бельгия"></li>
               <li class="companions-item__country companions-item__country--cze" aria-label="Чехия"></li>
             </ul>
-            <ul class="companions-item__transport-list">
-              <li class="companions-item__transport-item companions-item__transport-item--air companions-item__transport-item--active" aria-label="Самолет"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--bus companions-item__transport-item--active" aria-label="Автобус"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--buy" aria-label="Велосипед"></li>
-              <li class="companions-item__transport-item companions-item__transport-item--walk companions-item__transport-item--active" aria-label="Пешком"></li>
+            <ul class="transport-list companions-item__transport-list">
+              <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+              <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
+              <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+              <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
             </ul>
           </div>
-          <div class="companions-item__level">
-            <span>80</span>
-            <span>level</span>
+          <div class="companions-item__level level">
+            <span class="level__percent">80</span>
+            <span class="level__text">level</span>
           </div>
         </li>
       </ul>
@@ -199,6 +199,29 @@
         </li>
       </ol>
       <a class="tariffs__all" href="tariffs.html">Показать тарифы для бизнеса</a>
+    </section>
+    <section>
+      <div class="interested">
+        <h2 class="interested__title">Заинтересовались?</h2>
+        <p class="interested__text">Зарегестрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тоггда скорее <a class="interested__link" href="login.html">авторизуйтесь.</a></p>
+        <label class="visually-hidden" for="email">Ваш e-mail:</label>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <input class="interested__input" id="email" placeholder="E-mail">
+          <button class="interested__btn" type="submit" aria-label="Зарегистрироваться"></button>
+        </form>
+        <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <div class="contacts interested__contacts">
+          <a class="contacts__phone" href="tel: +88005558628">8&nbsp;800&nbsp;555-86-28</a>
+          <a class="contacts__email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+      </div>
+      <div class="address">
+        <h2 class="address__title">ул. большая конюшенная, 19/8</h2>
+        <button class="address__path">Проложить маршрут</button>
+      </div>
+      <div class="map">
+        <img class="map__img" src="https://via.placeholder.com/320" width="320" height="320" alt="ул. большая конюшенная, 19/8">
+      </div>
     </section>
   </main>
   <footer class="page-footer">

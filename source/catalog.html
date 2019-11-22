@@ -48,6 +48,241 @@
   </header>
   <main class="page-main">
     <h1 class="main-title">Попутчики</h1>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <section class="countries-filter">
+        <div class="countries-filter__header">
+          <h2 class="countries-filter__title">фильтрация по странам</h2>
+          <button class="countries-filter__toggle" aria-label="Переключить фильтр"></button>
+        </div>
+        <ul class="countries-filter__continents">
+          <li class="countries-filter__continent">
+            <a class="countries-filter__continent-link" href="/europe">Европа</a>
+          </li>
+          <li class="countries-filter__continent">
+            <a class="countries-filter__continent-link" href="/europe">Азия</a>
+          </li>
+          <li class="countries-filter__continent">
+            <a class="countries-filter__continent-link" href="/europe">Америка</a>
+          </li>
+          <li class="countries-filter__continent">
+            <a class="countries-filter__continent-link" href="/europe">Острова</a>
+          </li>
+        </ul>
+        <table class="countries-filter__alphabet alphabet">
+          <tbody>
+            <tr>
+              <td class="alphabet__char">
+                A
+              </td>
+              <td class="alphabet__char">
+                Б
+              </td>
+              <td class="alphabet__char">
+                В
+              </td>
+              <td class="alphabet__char">
+                Г
+              </td>
+              <td class="alphabet__char">
+                Д
+              </td>
+            </tr>
+            <tr>
+              <td class="alphabet__char">
+                Е
+              </td>
+              <td class="alphabet__char">
+                З
+              </td>
+              <td class="alphabet__char">
+                И
+              </td>
+              <td class="alphabet__char">
+                К
+              </td>
+              <td class="alphabet__char">
+                Л
+              </td>
+            </tr>
+            <tr>
+              <td class="alphabet__char">
+                М
+              </td>
+              <td class="alphabet__char">
+                Н
+              </td>
+              <td class="alphabet__char">
+                О
+              </td>
+              <td class="alphabet__char">
+                П
+              </td>
+              <td class="alphabet__char">
+                Р
+              </td>
+            </tr>
+            <tr>
+              <td class="alphabet__char">
+                С
+              </td>
+              <td class="alphabet__char">
+                Т
+              </td>
+              <td class="alphabet__char">
+                У
+              </td>
+              <td class="alphabet__char">
+                Ф
+              </td>
+              <td class="alphabet__char">
+                Х
+              </td>
+            </tr>
+            <tr>
+              <td class="alphabet__char">
+                Ч
+              </td>
+              <td class="alphabet__char">
+                Ш
+              </td>
+              <td class="alphabet__char">
+                Э
+              </td>
+              <td class="alphabet__char">
+                Ю
+              </td>
+              <td class="alphabet__char">
+                Я
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="countries-filter__list">
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Афганистан</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Албания</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Алжир</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Андорра</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Аргентина</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Армения</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Австралия</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Австрия</a>
+          </li>
+          <li class="countries-filter__list-item">
+            <a class="countries-filter__list-link" href="/europe/france">Азербайджан</a>
+          </li>
+        </ul>
+        <button class="countries-filter__toggle" type="button">Свернуть</button>
+      </section>
+      <section class="companions-filter">
+          <h2>Подберите идеального попутчика</h2>
+          <fieldset class="companions-filter__group">
+            <legend class="companions-filter__title">Хобби</legend>
+            <ul class="companions-filter__list">
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox11" name="properties1" value="1" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox11">Тяжелый рок</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox12" name="properties1" value="2">
+                <label class="companions-filter__label-checkbox" for="checkbox12">Русский рэп</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox13" name="properties1" value="3" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox13">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companions-filter__group">
+            <legend class="companions-filter__title">Музыка</legend>
+            <ul class="companions-filter__list">
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox21" name="properties2" value="1" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox21">Тяжелый рок</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox22" name="properties2" value="2">
+                <label class="companions-filter__label-checkbox" for="checkbox22">Русский рэп</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox23" name="properties2" value="3" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox23">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companions-filter__group">
+            <legend class="companions-filter__title">Еда</legend>
+            <ul class="companions-filter__list">
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox31" name="properties3" value="1" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox31">Тяжелый рок</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox32" name="properties3" value="2">
+                <label class="companions-filter__label-checkbox" for="checkbox32">Русский рэп</label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox33" name="properties3" value="3" checked>
+                <label class="companions-filter__label-checkbox" for="checkbox33">Евроденс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companions-filter__group">
+            <legend class="companions-filter__title">Транмпорт</legend>
+            <ul class="companions-filter__list">
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox41" name="properties4" value="1" checked>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--air" for="checkbox41"></label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox42" name="properties4" value="2">
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--bus" for="checkbox42"></label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox43" name="properties4" value="3" checked>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--buy" for="checkbox43"></label>
+              </li>
+              <li class="companions-filter__list-item">
+                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox44" name="properties4" value="3" checked>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--walk" for="checkbox44"></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companions-filter__group">
+            <legend class="companions-filter__title">Левел</legend>
+            <div class="range companions-filter__range">
+              <div class="range__levels">
+                <input class="range__min" type="text" id="range-min">
+                <label class="visually-hidden" for="range-min">минимальный левел</label>
+                <input class="range__max" type="text" id="range-max">
+                <label class="visually-hidden" for="range-max">максимальный левел</label>
+              </div>
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle--min"></div>
+                <div class="range__toggle range__toggle--max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="companions-filter__submit" type="submit">Показать</button>
+      </section>
+    </form>
     <section class="companions-catalog">
       <h2 class="visually-hidden">Попутчики</h2>
       <ul class="companions-catalog__list">
@@ -56,7 +291,7 @@
             <a class="companions-catalog-item__image-link" href="profile.html">
               <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
             </a>
-            <button class="companions-catalog-item__like companions-catalog-item__like--active" aria-label="Нравится"></button>
+            <button class="companions-catalog-item__like companions-catalog-item__like--active" type="button" aria-label="Нравится"></button>
           </div>
           <div class="companions-catalog-item__name-wrapper">
             <a class="companions-catalog-item__name-link" href="profile.html">
@@ -75,11 +310,11 @@
           <div class="companions-catalog-item__tran-level-wrapper">
             <div class="companions-catalog-item__tran-wrapper">
               <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="companions-catalog-item__transport-list">
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus" aria-label="Автобус"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              <ul class="transport-list companions-catalog-item__transport-list">
+                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
+                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
               </ul>
             </div>
             <div class="companions-catalog-item__tran-level">
@@ -96,7 +331,7 @@
             <a class="companions-catalog-item__image-link" href="profile.html">
               <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
             </a>
-            <button class="companions-catalog-item__like" aria-label="Нравится"></button>
+            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
           </div>
           <div class="companions-catalog-item__name-wrapper">
             <a class="companions-catalog-item__name-link" href="profile.html">
@@ -114,11 +349,11 @@
           <div class="companions-catalog-item__tran-level-wrapper">
             <div class="companions-catalog-item__tran-wrapper">
               <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="companions-catalog-item__transport-list">
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus companions-catalog-item__transport-item--active" aria-label="Автобус"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk companions-catalog-item__transport-item--active" aria-label="Пешком"></li>
+              <ul class="transport-list companions-catalog-item__transport-list">
+                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
+                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
               </ul>
             </div>
             <div class="companions-catalog-item__tran-level">
@@ -135,7 +370,7 @@
             <a class="companions-catalog-item__image-link" href="profile.html">
               <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
             </a>
-            <button class="companions-catalog-item__like" aria-label="Нравится"></button>
+            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
           </div>
           <div class="companions-catalog-item__name-wrapper">
             <a class="companions-catalog-item__name-link" href="profile.html">
@@ -154,11 +389,11 @@
           <div class="companions-catalog-item__tran-level-wrapper">
             <div class="companions-catalog-item__tran-wrapper">
               <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="companions-catalog-item__transport-list">
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus" aria-label="Автобус"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy companions-catalog-item__transport-item--active" aria-label="Велосипед"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              <ul class="transport-list companions-catalog-item__transport-list">
+                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
+                <li class="transport-list__item transport-list__item--buy transport-list__item--active" aria-label="Велосипед"></li>
+                <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
               </ul>
             </div>
             <div class="companions-catalog-item__tran-level">
@@ -175,7 +410,7 @@
             <a class="companions-catalog-item__image-link" href="profile.html">
               <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
             </a>
-            <button class="companions-catalog-item__like" aria-label="Нравится"></button>
+            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
           </div>
           <div class="companions-catalog-item__name-wrapper">
             <a class="companions-catalog-item__name-link" href="profile.html">
@@ -194,11 +429,11 @@
           <div class="companions-catalog-item__tran-level-wrapper">
             <div class="companions-catalog-item__tran-wrapper">
               <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="companions-catalog-item__transport-list">
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--air companions-catalog-item__transport-item--active" aria-label="Самолет"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--bus companions-catalog-item__transport-item--active" aria-label="Автобус"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--buy" aria-label="Велосипед"></li>
-                <li class="companions-catalog-item__transport-item companions-catalog-item__transport-item--walk" aria-label="Пешком"></li>
+              <ul class="transport-list companions-catalog-item__transport-list">
+                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
+                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
               </ul>
             </div>
             <div class="companions-catalog-item__tran-level">

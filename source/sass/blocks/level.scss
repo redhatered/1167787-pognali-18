@@ -1,0 +1,16 @@
+.level {
+  background-color: $companions-item__level-background-color;
+}
+
+.level__percent {
+  font-size: $level__percent-font-size;
+  line-height: $level__percent-line-height;
+  color: $level__percent-color;
+  font-weight: 700;
+}
+
+.level__text {
+  font-size: $level__text-font-size;
+  line-height: $level__text-line-height;
+  color: $level__text-color;
+}

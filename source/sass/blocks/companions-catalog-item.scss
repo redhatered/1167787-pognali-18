@@ -1,0 +1,65 @@
+.companions-catalog-item {
+  background-color: $companions-catalog-item-background-color;
+}
+
+.companions-catalog-item__name {
+  font-size: $companions-catalog-item__name-font-size;
+  line-height: $companions-catalog-item__name-line-height;
+  color: $companions-catalog-item__name-color;
+  font-weight: 700;
+}
+
+.companions-catalog-item__likes {
+  font-size: $companions-catalog-item__likes-font-size;
+  line-height: $companions-catalog-item__likes-line-height;
+  color: $companions-catalog-item__likes-color;
+  font-weight: 700;
+}
+
+.companions-catalog-item__tags {
+  font-size: $companions-catalog-item__tags-font-size;
+  line-height: $companions-catalog-item__tags-line-height;
+}
+
+.companions-catalog-item__countries-title {
+  font-size: $companions-catalog-item__countries-title-font-size;
+  line-height: $companions-catalog-item__countries-title-line-height;
+}
+
+.companions-catalog-item__countries {
+  @include reset-list;
+}
+
+.companions-catalog-item__country {
+  font-size: $companions-catalog-item__country-font-size;
+  line-height: $companions-catalog-item__country-line-height;
+  color: $companions-catalog-item__country-color;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.companions-catalog-item__transport-title {
+  font-size: $companions-catalog-item__transport-title-font-size;
+  line-height: $companions-catalog-item__transport-title-line-height;
+}
+
+.companions-catalog-item__level-title {
+  font-size: $companions-catalog-item__level-title-font-size;
+  line-height: $companions-catalog-item__level-title-line-height;
+}
+
+.companions-catalog-item__call {
+  background-color: $companions-catalog-item__call-background-color;
+  font-size: $companions-catalog-item__call-font-size;
+  line-height: $companions-catalog-item__call-line-height;
+  color: $companions-catalog-item__call-color;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.companions-catalog-item__level {
+  font-size: $companions-catalog-item__level-font-size;
+  line-height: $companions-catalog-item__level-line-height;
+  color: $companions-catalog-item__level-color;
+  font-weight: 700;
+}

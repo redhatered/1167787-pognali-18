@@ -1,0 +1,173 @@
+//colors
+$black: #000000;
+$black06: rgba(0, 0, 0, 0.6);
+$blue: #192144;
+$blue-light: #1d2e5b;
+$blue-dark: #161c35;
+$grey: #444444;
+$white: #ffffff;
+$white-dark: #edeff6;
+$orange: #ff8d30;
+$orange-light: #ffa530;
+$orange-lighter: #ffbd30;
+$yellow: #ffd74b;
+
+$background-main-color: $white-dark;
+$text-main-color: $grey;
+$modal-background-color: $white;
+$page-header-background-color: $modal-background-color;
+
+$site-list-color: $blue;
+
+$login-background-color: $yellow;
+$login-color: $blue-dark;
+
+$contacts-color: $blue;
+
+$slogan-color: $white;
+
+$reviews__text-color: $white;
+$reviews__author-color: $white;
+
+$steps__item-color: $blue-dark;
+$steps__item-background-color: $orange;
+$steps__item-background-color2n: $orange-light;
+$steps__item-background-color3n: $orange-lighter;
+$steps__item-background-color4n: $yellow;
+
+$introduction-background-color: $blue-dark;
+
+$about__title-color: $orange;
+$about__main-text-color: $white;
+$about__sub-text-color: $white;
+
+$directions__title-color: $orange;
+$directions__all-background-color: $yellow;
+$directions__all-color: $blue-light;
+
+$directions-item__wrapper-background-color: $white;
+$directions-item__country-color: $blue-dark;
+$directions-item__title-color: $grey;
+$directions-item__counter-color: $grey;
+
+$companions-background-color: $blue-light;
+$companions__title-color: $orange;
+$companions__text-color: $white;
+$companions__subtext-color: $white;
+$companions__all-background-color: $yellow;
+$companions__all-color: $blue-light;
+
+$companions-item__wrapper-background-color: $white;
+$companions-item__name-color: $blue-light;
+$companions-item__level-background-color: $black06;
+
+$companions-catalog-item-background-color: $white;
+
+$level__percent-color: $white;
+$level__text-color: $white;
+
+$tariffs-background-color: $white-dark;
+$tariffs__all-color: $blue;
+
+$add-profile__title-color: $orange;
+
+$page-footer-background-color: $white;
+
+$companions-catalog-item__name-color: $blue-light;
+$companions-catalog-item__likes-color: $blue-dark;
+$companions-catalog-item__country-color: $blue-light;
+$companions-catalog-item__call-color: $blue-dark;
+$companions-catalog-item__call-background-color: $yellow;
+$companions-catalog-item__level-color: $blue-light;
+
+$companions-catalog__all-color: $blue-light;
+$companions-catalog__prev-background-color: $white;
+$companions-catalog__next-background-color: $white;
+
+//fonts sizes
+$max-font-size: 38px;
+$largest-font-size: 36px;
+$larger-font-size: 30px;
+$large-font-size: 24px;
+$biggest-font-size: 21px;
+$prebiggest-font-size: 20px;
+$bigger-font-size: 18px;
+$big-font-size: 17px;
+$medium-font-size: 16px;
+$small-font-size: 15px;
+$smaller-font-size: 14px;
+
+$main-font-size: $medium-font-size;
+$main-line-height: 22px;
+
+$site-list-font-size: $larger-font-size;
+$site-list-line-height: 36px;
+
+$login-font-size: $big-font-size;
+$login-line-height: 30px;
+
+$slogan-font-size: $largest-font-size;
+$slogan-line-height: 40px;
+
+$steps__item-font-size: $bigger-font-size;
+$steps__item-line-height: 18px;
+
+$about__title-font-size: $large-font-size;
+$about__title-line-height: 24px;
+
+$directions__title-font-size: $large-font-size;
+$directions__title-line-height: 24px;
+$directions__all-font-size: $bigger-font-size;
+$directions__all-line-height: 18px;
+
+$directions-item__country-font-size: $biggest-font-size;
+$directions-item__country-line-height: 21px;
+$directions-item__title-line-height: 18px;
+$directions-item__counter-line-height: 30px;
+
+$companions__title-font-size: $large-font-size;
+$companions__title-line-height: 24px;
+$companions__all-font-size: $bigger-font-size;
+$companions__all-line-height: 18px;
+
+$companions-item__name-font-size: $biggest-font-size;
+$companions-item__name-line-height: 21px;
+$companions-item__tags-line-height: 18px;
+
+$level__percent-font-size: $large-font-size;
+$level__percent-line-height: 24px;
+$level__text-font-size: $smaller-font-size;
+$level__text-line-height: 14px;
+
+$add-profile__title-font-size: $large-font-size;
+$add-profile__title-line-height: 24px;
+
+$companions-catalog-item__name-font-size: $prebiggest-font-size;
+$companions-catalog-item__name-line-height: 20px;
+$companions-catalog-item__likes-font-size: $smaller-font-size;
+$companions-catalog-item__likes-line-height: 21px;
+$companions-catalog-item__tags-font-size: $small-font-size;
+$companions-catalog-item__tags-line-height: 18px;
+$companions-catalog-item__countries-title-font-size: $small-font-size;
+$companions-catalog-item__countries-title-line-height: 18px;
+$companions-catalog-item__country-font-size: $small-font-size;
+$companions-catalog-item__country-line-height: 18px;
+$companions-catalog-item__transport-title-font-size: $small-font-size;
+$companions-catalog-item__transport-title-line-height: 18px;
+$companions-catalog-item__level-title-font-size: $small-font-size;
+$companions-catalog-item__level-title-line-height: 18px;
+$companions-catalog-item__call-font-size: $big-font-size;
+$companions-catalog-item__call-line-height: 30px;
+$companions-catalog-item__level-font-size: $large-font-size;
+$companions-catalog-item__level-line-height: 18px;
+
+$companions-catalog__all-font-size: $big-font-size;
+$companions-catalog__all-line-height: 30px;
+
+$tariffs__all-line-height: 16px;
+
+
+//media queries
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;

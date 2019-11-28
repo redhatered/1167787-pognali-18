@@ -1,0 +1,13 @@
+.tariffs {
+  background-color: $tariffs-background-color;
+}
+
+.tariffs__all {
+  line-height: $tariffs__all-line-height;
+  color: $tariffs__all-color;
+  font-weight: 700;
+}
+
+.tariffs__item {
+  font-weight: 300;
+}

@@ -1,0 +1,18 @@
+.companions-item__wrapper {
+  background-color: $companions-item__wrapper-background-color;
+}
+
+.companions-item__countries {
+  @include reset-list;
+}
+
+.companions-item__name {
+  font-size: $companions-item__name-font-size;
+  line-height: $companions-item__name-line-height;
+  color: $companions-item__name-color;
+  font-weight: 700;
+}
+
+.companions-item__tags {
+  line-height: $companions-item__tags-line-height;
+}

@@ -1,0 +1,32 @@
+.companions {
+  background-color: $companions-background-color;
+}
+
+.companions__title {
+  font-size: $companions__title-font-size;
+  line-height: $companions__title-line-height;
+  color: $companions__title-color;
+  font-weight: 700;
+}
+
+.companions__text {
+  color: $companions__text-color;
+  font-weight: 300;
+}
+
+.companions__subtext {
+  color: $companions__subtext-color;
+  font-weight: 700;
+}
+
+.companions__all {
+  background-color: $companions__all-background-color;
+  font-size: $companions__all-font-size;
+  line-height: $companions__all-line-height;
+  color: $companions__all-color;
+  font-weight: 700;
+}
+
+.companions__list {
+  @include reset-list;
+}

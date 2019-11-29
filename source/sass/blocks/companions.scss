@@ -1,29 +1,29 @@
 .companions {
-  background-color: $companions-background-color;
+  background-color: $blue-light;
 }
 
 .companions__title {
-  font-size: $companions__title-font-size;
-  line-height: $companions__title-line-height;
-  color: $companions__title-color;
+  font-size: $large-font-size;
+  line-height: 24px;
+  color: $orange;
   font-weight: 700;
 }
 
 .companions__text {
-  color: $companions__text-color;
+  color: $white;
   font-weight: 300;
 }
 
 .companions__subtext {
-  color: $companions__subtext-color;
+  color: $white;
   font-weight: 700;
 }
 
 .companions__all {
-  background-color: $companions__all-background-color;
-  font-size: $companions__all-font-size;
-  line-height: $companions__all-line-height;
-  color: $companions__all-color;
+  background-color: $yellow;
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-light;
   font-weight: 700;
 }
 

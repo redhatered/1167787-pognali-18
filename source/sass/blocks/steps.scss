@@ -3,21 +3,21 @@
 }
 
 .steps__item {
-  font-size: $steps__item-font-size;
-  line-height: $steps__item-line-height;
-  color: $steps__item-color;
-  background-color: $steps__item-background-color;
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-dark;
+  background-color: $orange;
   font-weight: 700;
 }
 
 .steps__item:nth-child(2n) {
-  background-color: $steps__item-background-color2n;
+  background-color: $orange-light;
 }
 
 .steps__item:nth-child(3n) {
-  background-color: $steps__item-background-color3n;
+  background-color: $orange-lighter;
 }
 
 .steps__item:nth-child(4n) {
-  background-color: $steps__item-background-color4n;
+  background-color: $yellow;
 }

@@ -1,7 +1,7 @@
 .directions__title {
-  font-size: $directions__title-font-size;
-  line-height: $directions__title-line-height;
-  color: $directions__title-color;
+  font-size: $large-font-size;
+  line-height: 24px;
+  color: $orange;
   font-weight: 700;
 }
 
@@ -10,9 +10,9 @@
 }
 
 .directions__all {
-  background-color: $directions__all-background-color;
-  font-size: $directions__all-font-size;
-  line-height: $directions__all-line-height;
-  color: $directions__all-color;
+  background-color: $yellow;
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-light;
   font-weight: 700;
 }

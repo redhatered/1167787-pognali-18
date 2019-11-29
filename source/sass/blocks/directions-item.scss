@@ -1,24 +1,24 @@
 .directions-item__wrapper {
-  background-color: $directions-item__wrapper-background-color;
+  background-color: $white;
 }
 
 .directions-item__country {
-  font-size: $directions-item__country-font-size;
-  line-height: $directions-item__country-line-height;
-  color: $directions-item__country-color;
+  font-size: $biggest-font-size;
+  line-height: 21px;
+  color: $blue-dark;
   font-weight: 700;
 }
 
 .directions-item__title {
-  line-height: $directions-item__title-line-height;
-  color: $directions-item__title-color;
+  line-height: 18px;
+  color: $grey;
   opacity: 0.3;
   font-weight: 500;
 }
 
 .directions-item__counter {
-  line-height: $directions-item__counter-line-height;
-  color: $directions-item__counter-color;
+  line-height: 30px;
+  color: $grey;
   opacity: 0.3;
   font-weight: 500;
 }

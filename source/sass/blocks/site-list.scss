@@ -1,9 +1,9 @@
 .site-list {
   @include reset-list;
-  font-size: $site-list-font-size;
-  line-height: $site-list-line-height;
+  font-size: $larger-font-size;
+  line-height: 36px;
   text-transform: uppercase;
-  color: $site-list-color;
+  color: $blue;
   font-weight: 500;
 }
 

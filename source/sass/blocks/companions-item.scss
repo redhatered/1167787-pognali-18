@@ -1,5 +1,5 @@
 .companions-item__wrapper {
-  background-color: $companions-item__wrapper-background-color;
+  background-color: $white;
 }
 
 .companions-item__countries {
@@ -7,12 +7,12 @@
 }
 
 .companions-item__name {
-  font-size: $companions-item__name-font-size;
-  line-height: $companions-item__name-line-height;
-  color: $companions-item__name-color;
+  font-size: $biggest-font-size;
+  line-height: 21px;
+  color: $blue-light;
   font-weight: 700;
 }
 
 .companions-item__tags {
-  line-height: $companions-item__tags-line-height;
+  line-height: 18px;
 }

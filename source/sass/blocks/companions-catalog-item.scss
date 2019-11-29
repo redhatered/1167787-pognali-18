@@ -1,29 +1,29 @@
 .companions-catalog-item {
-  background-color: $companions-catalog-item-background-color;
+  background-color: $white;
 }
 
 .companions-catalog-item__name {
-  font-size: $companions-catalog-item__name-font-size;
-  line-height: $companions-catalog-item__name-line-height;
-  color: $companions-catalog-item__name-color;
+  font-size: $prebiggest-font-size;
+  line-height: 20px;
+  color: $blue-light;
   font-weight: 700;
 }
 
 .companions-catalog-item__likes {
-  font-size: $companions-catalog-item__likes-font-size;
-  line-height: $companions-catalog-item__likes-line-height;
-  color: $companions-catalog-item__likes-color;
+  font-size: $smaller-font-size;
+  line-height: 21px;
+  color: $blue-dark;
   font-weight: 700;
 }
 
 .companions-catalog-item__tags {
-  font-size: $companions-catalog-item__tags-font-size;
-  line-height: $companions-catalog-item__tags-line-height;
+  font-size: $small-font-size;
+  line-height: 18px;
 }
 
 .companions-catalog-item__countries-title {
-  font-size: $companions-catalog-item__countries-title-font-size;
-  line-height: $companions-catalog-item__countries-title-line-height;
+  font-size: $small-font-size;
+  line-height: 18px;
 }
 
 .companions-catalog-item__countries {
@@ -31,35 +31,35 @@
 }
 
 .companions-catalog-item__country {
-  font-size: $companions-catalog-item__country-font-size;
-  line-height: $companions-catalog-item__country-line-height;
-  color: $companions-catalog-item__country-color;
+  font-size: $small-font-size;
+  line-height: 18px;
+  color: $blue-light;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .companions-catalog-item__transport-title {
-  font-size: $companions-catalog-item__transport-title-font-size;
-  line-height: $companions-catalog-item__transport-title-line-height;
+  font-size: $small-font-size;
+  line-height: 18px;
 }
 
 .companions-catalog-item__level-title {
-  font-size: $companions-catalog-item__level-title-font-size;
-  line-height: $companions-catalog-item__level-title-line-height;
+  font-size: $small-font-size;
+  line-height: 18px;
 }
 
 .companions-catalog-item__call {
-  background-color: $companions-catalog-item__call-background-color;
-  font-size: $companions-catalog-item__call-font-size;
-  line-height: $companions-catalog-item__call-line-height;
-  color: $companions-catalog-item__call-color;
+  background-color: $yellow;
+  font-size: $big-font-size;
+  line-height: 30px;
+  color: $blue-dark;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .companions-catalog-item__level {
-  font-size: $companions-catalog-item__level-font-size;
-  line-height: $companions-catalog-item__level-line-height;
-  color: $companions-catalog-item__level-color;
+  font-size: $large-font-size;
+  line-height: 18px;
+  color: $blue-light;
   font-weight: 700;
 }

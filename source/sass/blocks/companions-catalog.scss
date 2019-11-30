@@ -1,0 +1,19 @@
+.companions-catalog__list {
+  @include reset-list;
+}
+
+.companions-catalog__all {
+  font-size: $big-font-size;
+  line-height: 30px;
+  color: $blue-light;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.companions-catalog__prev {
+  background-color: $white;
+}
+
+.companions-catalog__next {
+  background-color: $white;
+}

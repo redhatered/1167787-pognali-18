@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
     </a>
@@ -13,13 +15,13 @@
       <button class="main-nav__toggle" type="button">Переключить меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="about.html">О сервисе</a>
+          <a class="site-list__link" href="about.html">О сервисе</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Направления</a>
+          <a class="site-list__link" href="form.html">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Попутчики</a>
+          <a class="site-list__link" href="catalog.html">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -47,55 +49,57 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Погнали? - сервис подбора попутчиков</h1>
-    <p class="slogan">
-      В путешествиес крутыми попутчиками!
-    </p>
-    <div class="contacts-auth">
-      <div class="contacts">
-        <a class="contacts__phone" href="tel: +88005558628"></a>
-        <a class="contacts__email" href="mailto: mail@htmlacademy.ru"></a>
+    <div class="introduction container">
+      <h1 class="visually-hidden">Погнали? - сервис подбора попутчиков</h1>
+      <p class="slogan">
+        В путешествиес крутыми попутчиками!
+      </p>
+      <div class="contacts-auth">
+        <div class="contacts">
+          <a class="contacts__phone" href="tel: +88005558628"></a>
+          <a class="contacts__email" href="mailto: mail@htmlacademy.ru"></a>
+        </div>
+        <a class="login" href="login.html">Авторизация</a>
       </div>
-      <a class="login" href="login.html">Авторизация</a>
-    </div>
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <blockquote class="reviews__item">
-        <p class="reviews__text">
-          «Лучшее приложение, что я видел в жизни!»
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <blockquote class="reviews__item">
+          <p class="reviews__text">
+            «Лучшее приложение, что я видел в жизни!»
+          </p>
+          <cite class="reviews__author">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+      </section>
+      <section class="steps">
+        <h2 class="visually-hidden">Шаги</h2>
+        <ol class="steps__list">
+          <li class="steps__item">
+            Выберите направление
+          </li>
+          <li class="steps__item">
+            Изучите идеи путешественников
+          </li>
+          <li class="steps__item">
+            Находите тех, кто похож на вас
+          </li>
+          <li class="steps__item">
+            Путешествуйте вместе!
+          </li>
+        </ol>
+      </section>
+      <section class="about">
+        <h2 class="about__title">О сервисе</h2>
+        <p class="about__main-text">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <cite class="reviews__author">
-          Мурат Эльтазин главный редактор газеты «гаджетлайф»
-        </cite>
-      </blockquote>
-    </section>
-    <section class="steps">
-      <h2 class="visually-hidden">Шаги</h2>
-      <ol class="steps__list">
-        <li class="steps__item">
-          Выберите направление
-        </li>
-        <li class="steps__item">
-          Изучите идеи путешественников
-        </li>
-        <li class="steps__item">
-          Находите тех, кто похож на вас
-        </li>
-        <li class="steps__item">
-          Путешествуйте вместе!
-        </li>
-      </ol>
-    </section>
-    <section class="about">
-      <h2 class="about__title">О сервисе</h2>
-      <p class="about__main-text">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
-      </p>
-      <p class="about__sub-text">
-        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-      </p>
-    </section>
-    <section class="directions">
+        <p class="about__sub-text">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+      </section>
+    </div>
+    <section class="directions container">
       <h2 class="directions__title">Направления</h2>
       <p class="directions__text">
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -125,7 +129,7 @@
       </ul>
       <a class="directions__all" href="form.html">Показать все</a>
     </section>
-    <section class="companions">
+    <section class="companions container">
       <h2 class="companions__title">Попутчики</h2>
       <p class="companions__text">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
@@ -180,9 +184,9 @@
       </ul>
       <a class="companions__all" href="catalog.html">Показать всех</a>
     </section>
-    <section class="tariffs">
+    <section class="tariffs container">
       <div class="add-profile">
-        <h2>Добавьте свой профиль</h2>
+        <h2 class="add-profile__title">Добавьте свой профиль</h2>
       </div>
       <ol class="tariffs__list">
         <li class="tariffs__item">
@@ -200,13 +204,13 @@
       </ol>
       <a class="tariffs__all" href="tariffs.html">Показать тарифы для бизнеса</a>
     </section>
-    <section>
+    <section class="container">
       <div class="interested">
         <h2 class="interested__title">Заинтересовались?</h2>
         <p class="interested__text">Зарегестрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тоггда скорее <a class="interested__link" href="login.html">авторизуйтесь.</a></p>
         <label class="visually-hidden" for="email">Ваш e-mail:</label>
         <form method="post" action="https://echo.htmlacademy.ru">
-          <input class="interested__input" id="email" placeholder="E-mail">
+          <input class="interested__input" id="email" placeholder="E-mail" name="email">
           <button class="interested__btn" type="submit" aria-label="Зарегистрироваться"></button>
         </form>
         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
@@ -224,7 +228,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__logo">
       <img class="page-footer__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
     </a>

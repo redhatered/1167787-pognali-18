@@ -1,0 +1,32 @@
+.companions {
+  background-color: $blue-light;
+}
+
+.companions__title {
+  font-size: $large-font-size;
+  line-height: 24px;
+  color: $orange;
+  font-weight: 700;
+}
+
+.companions__text {
+  color: $white;
+  font-weight: 300;
+}
+
+.companions__subtext {
+  color: $white;
+  font-weight: 700;
+}
+
+.companions__all {
+  background-color: $yellow;
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-light;
+  font-weight: 700;
+}
+
+.companions__list {
+  @include reset-list;
+}

@@ -1,0 +1,39 @@
+//colors
+$black: #000000;
+$black06: rgba(0, 0, 0, 0.6);
+$blue: #192144;
+$blue-light: #1d2e5b;
+$blue-dark: #161c35;
+$grey: #444444;
+$white: #ffffff;
+$white-dark: #edeff6;
+$orange: #ff8d30;
+$orange-light: #ffa530;
+$orange-lighter: #ffbd30;
+$yellow: #ffd74b;
+
+$background-main-color: $white-dark;
+$text-main-color: $grey;
+$modal-background-color: $white;
+$page-header-background-color: $modal-background-color;
+
+//fonts sizes
+$max-font-size: 38px;
+$largest-font-size: 36px;
+$larger-font-size: 30px;
+$large-font-size: 24px;
+$biggest-font-size: 21px;
+$prebiggest-font-size: 20px;
+$bigger-font-size: 18px;
+$big-font-size: 17px;
+$medium-font-size: 16px;
+$small-font-size: 15px;
+$smaller-font-size: 14px;
+
+$main-font-size: $medium-font-size;
+$main-line-height: 22px;
+
+//media queries
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;

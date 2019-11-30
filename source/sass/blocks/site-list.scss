@@ -1,0 +1,12 @@
+.site-list {
+  @include reset-list;
+  font-size: $larger-font-size;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: $blue;
+  font-weight: 500;
+}
+
+.site-list__link {
+  color: inherit;
+}

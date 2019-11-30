@@ -1,0 +1,24 @@
+.directions-item__wrapper {
+  background-color: $white;
+}
+
+.directions-item__country {
+  font-size: $biggest-font-size;
+  line-height: 21px;
+  color: $blue-dark;
+  font-weight: 700;
+}
+
+.directions-item__title {
+  line-height: 18px;
+  color: $grey;
+  opacity: 0.3;
+  font-weight: 500;
+}
+
+.directions-item__counter {
+  line-height: 30px;
+  color: $grey;
+  opacity: 0.3;
+  font-weight: 500;
+}

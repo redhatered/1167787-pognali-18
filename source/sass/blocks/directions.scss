@@ -1,0 +1,18 @@
+.directions__title {
+  font-size: $large-font-size;
+  line-height: 24px;
+  color: $orange;
+  font-weight: 700;
+}
+
+.directions__list {
+  @include reset-list;
+}
+
+.directions__all {
+  background-color: $yellow;
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-light;
+  font-weight: 700;
+}

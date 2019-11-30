@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
     </a>
@@ -46,7 +48,7 @@
       </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main container">
     <h1 class="main-title">Попутчики</h1>
     <form method="get" action="https://echo.htmlacademy.ru">
       <section class="countries-filter">
@@ -246,19 +248,19 @@
             <ul class="companions-filter__list">
               <li class="companions-filter__list-item">
                 <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox41" name="properties4" value="1" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--air" for="checkbox41"></label>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--air" for="checkbox41" aria-label="Самолет"></label>
               </li>
               <li class="companions-filter__list-item">
                 <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox42" name="properties4" value="2">
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--bus" for="checkbox42"></label>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--bus" for="checkbox42" aria-label="Автобус"></label>
               </li>
               <li class="companions-filter__list-item">
                 <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox43" name="properties4" value="3" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--buy" for="checkbox43"></label>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--buy" for="checkbox43" aria-label="Велосипед"></label>
               </li>
               <li class="companions-filter__list-item">
                 <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox44" name="properties4" value="3" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--walk" for="checkbox44"></label>
+                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--walk" for="checkbox44" aria-label="Пешком"></label>
               </li>
             </ul>
           </fieldset>
@@ -266,17 +268,17 @@
             <legend class="companions-filter__title">Левел</legend>
             <div class="range companions-filter__range">
               <div class="range__levels">
-                <input class="range__min" type="text" id="range-min">
+                <input class="range__min" type="text" id="range-min" name="range-min">
                 <label class="visually-hidden" for="range-min">минимальный левел</label>
-                <input class="range__max" type="text" id="range-max">
+                <input class="range__max" type="text" id="range-max" name="range-max">
                 <label class="visually-hidden" for="range-max">максимальный левел</label>
               </div>
               <div class="range__controls">
                 <div class="range__scale">
                   <div class="range__bar"></div>
                 </div>
-                <div class="range__toggle range__toggle--min"></div>
-                <div class="range__toggle range__toggle--max"></div>
+                <div class="range__toggle range__toggle--min" aria-label="Минимальный левел"></div>
+                <div class="range__toggle range__toggle--max" aria-label="Максимальный левел"></div>
               </div>
             </div>
           </fieldset>
@@ -453,7 +455,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__logo">
       <img class="page-footer__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
     </a>

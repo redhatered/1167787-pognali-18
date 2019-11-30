@@ -1,0 +1,23 @@
+.steps__list {
+  @include reset-list;
+}
+
+.steps__item {
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-dark;
+  background-color: $orange;
+  font-weight: 700;
+}
+
+.steps__item:nth-child(2n) {
+  background-color: $orange-light;
+}
+
+.steps__item:nth-child(3n) {
+  background-color: $orange-lighter;
+}
+
+.steps__item:nth-child(4n) {
+  background-color: $yellow;
+}

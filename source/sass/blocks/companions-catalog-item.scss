@@ -1,0 +1,65 @@
+.companions-catalog-item {
+  background-color: $white;
+}
+
+.companions-catalog-item__name {
+  font-size: $prebiggest-font-size;
+  line-height: 20px;
+  color: $blue-light;
+  font-weight: 700;
+}
+
+.companions-catalog-item__likes {
+  font-size: $smaller-font-size;
+  line-height: 21px;
+  color: $blue-dark;
+  font-weight: 700;
+}
+
+.companions-catalog-item__tags {
+  font-size: $small-font-size;
+  line-height: 18px;
+}
+
+.companions-catalog-item__countries-title {
+  font-size: $small-font-size;
+  line-height: 18px;
+}
+
+.companions-catalog-item__countries {
+  @include reset-list;
+}
+
+.companions-catalog-item__country {
+  font-size: $small-font-size;
+  line-height: 18px;
+  color: $blue-light;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.companions-catalog-item__transport-title {
+  font-size: $small-font-size;
+  line-height: 18px;
+}
+
+.companions-catalog-item__level-title {
+  font-size: $small-font-size;
+  line-height: 18px;
+}
+
+.companions-catalog-item__call {
+  background-color: $yellow;
+  font-size: $big-font-size;
+  line-height: 30px;
+  color: $blue-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.companions-catalog-item__level {
+  font-size: $large-font-size;
+  line-height: 18px;
+  color: $blue-light;
+  font-weight: 700;
+}

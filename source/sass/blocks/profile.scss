@@ -1,0 +1,17 @@
+.profile__image {
+  border-radius: 50%;
+}
+
+.profile__change-image {
+  font-size: $big-font-size;
+  line-height: 30px;
+  color: $blue-dark;
+  background-color: $grey-lighter;
+  text-transform: uppercase;
+}
+
+.tags__title {
+  line-height: 18px;
+  color: $blue-light;
+  text-transform: uppercase;
+}

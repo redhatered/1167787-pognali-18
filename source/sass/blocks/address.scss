@@ -1,0 +1,17 @@
+.address {
+  background-color: $yellow;
+  color: $blue;
+  font-weight: 700;
+}
+
+.address__title {
+  text-transform: uppercase;
+}
+
+.address__path {
+  color: inherit;
+  background-color: inherit;
+  font-weight: inherit;
+  border: 2px solid $blue;
+  border-radius: 10px;
+}

@@ -2,4 +2,9 @@
 .contacts__email {
   color: $blue;
   text-transform: uppercase;
+  font-weight: 700;
+
+  &--interested {
+    color: $yellow;
+  }
 }

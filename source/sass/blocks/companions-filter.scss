@@ -1,0 +1,36 @@
+.companions-filter {
+  background-color: $yellow;
+  color: $blue-light;
+}
+
+.companions-filter__text {
+  color: $blue-light;
+  font-size: $prelarge-font-size;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.companions-filter__title {
+  color: $blue-light;
+  font-size: $medium-font-size;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.companions-filter__label-checkbox {
+  color: $blue-light;
+  font-size: $small-font-size;
+  line-height: 15px;
+}
+
+.companions-filter__list {
+  @include reset-list;
+}
+
+
+.companions-filter__submit {
+  background-color: $white;
+  color: $blue-dark;
+  font-size: $big-font-size;
+  line-height: 30px;
+}

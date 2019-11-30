@@ -1,5 +1,9 @@
 .level {
   background-color: $black06;
+
+  &--profile {
+    background: none;
+  }
 }
 
 .level__percent {
@@ -7,10 +11,22 @@
   line-height: 24px;
   color: $white;
   font-weight: 700;
+
+  &--profile {
+    font-size: $max-font-size;
+    line-height: 38px;
+    color: $blue-dark;
+  }
 }
 
 .level__text {
   font-size: $smaller-font-size;
   line-height: 14px;
   color: $white;
+
+  &--profile {
+    font-size: $bigger-font-size;
+    line-height: 22px;
+    color: $grey;
+  }
 }

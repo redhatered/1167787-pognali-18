@@ -1,0 +1,9 @@
+.transport__title {
+  line-height: 18px;
+  color: $blue-light;
+  text-transform: uppercase;
+}
+
+.transport__list {
+  @include reset-list;
+}

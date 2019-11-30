@@ -1,0 +1,10 @@
+.selected-countries {
+  @include reset-list;
+}
+
+.selected-country__title {
+  font-size: $bigger-font-size;
+  line-height: 18px;
+  color: $blue-light;
+  font-weight: 500;
+}

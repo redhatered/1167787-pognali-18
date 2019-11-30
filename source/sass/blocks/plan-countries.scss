@@ -1,0 +1,16 @@
+.plan-countries {
+  @include reset-list;
+}
+
+.plan-countries__country {
+  color: $blue-light;
+  font-weight: 500;
+  font-size: $smaller-font-size;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: $white;
+
+  &--add {
+    background-color: $white-dark;
+  }
+}

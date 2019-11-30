@@ -1,0 +1,318 @@
+[1mdiff --git a/source/catalog.html b/source/catalog.html[m
+[1mindex f9bed73..a147845 100644[m
+[1m--- a/source/catalog.html[m
+[1m+++ b/source/catalog.html[m
+[36m@@ -58,7 +58,7 @@[m
+         </div>[m
+         <ul class="countries-filter__continents">[m
+           <li class="countries-filter__continent">[m
+[31m-            <a class="countries-filter__continent-link" href="/europe">Европа</a>[m
+[32m+[m[32m            <a class="countries-filter__continent-link countries-filter__continent-link--active" href="/europe">Европа</a>[m
+           </li>[m
+           <li class="countries-filter__continent">[m
+             <a class="countries-filter__continent-link" href="/europe">Азия</a>[m
+[36m@@ -73,7 +73,7 @@[m
+         <table class="countries-filter__alphabet alphabet">[m
+           <tbody>[m
+             <tr>[m
+[31m-              <td class="alphabet__char">[m
+[32m+[m[32m              <td class="alphabet__char alphabet__char--active">[m
+                 A[m
+               </td>[m
+               <td class="alphabet__char">[m
+[36m@@ -191,7 +191,7 @@[m
+         <button class="countries-filter__toggle" type="button">Свернуть</button>[m
+       </section>[m
+       <section class="companions-filter">[m
+[31m-          <h2>Подберите идеального попутчика</h2>[m
+[32m+[m[32m          <h2 class="companions-filter__text">Подберите идеального попутчика</h2>[m
+           <fieldset class="companions-filter__group">[m
+             <legend class="companions-filter__title">Хобби</legend>[m
+             <ul class="companions-filter__list">[m
+[1mdiff --git a/source/form.html b/source/form.html[m
+[1mindex 5e295ef..a4447a9 100644[m
+[1m--- a/source/form.html[m
+[1m+++ b/source/form.html[m
+[36m@@ -2,7 +2,9 @@[m
+ <html lang="ru">[m
+   <head>[m
+     <meta charset="utf-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1">[m
+     <title>HTML Academy: Погнали</title>[m
+[32m+[m[32m    <link href="css/style.css" rel="stylesheet">[m
+   </head>[m
+   <body>[m
+   <header class="page-header">[m
+[36m@@ -51,9 +53,9 @@[m
+     <form method="post" action="https://echo.htmlacademy.ru">[m
+       <section class="profile">[m
+         <h2 class="visually-hidden">Профиль</h2>[m
+[31m-        <div class="level profile__level">[m
+[31m-          <span class="level__percent">80</span>[m
+[31m-          <span class="level__text">level</span>[m
+[32m+[m[32m        <div class="level profile__level level--profile">[m
+[32m+[m[32m          <span class="level__percent level__percent--profile">80</span>[m
+[32m+[m[32m          <span class="level__text level__text--profile">level</span>[m
+         </div>[m
+         <img class="profile__image" src="https://via.placeholder.com/100" width="100" height="100" alt="Погнали?">[m
+         <button class="profile__change-image" type="button">Сменить фото</button>[m
+[36m@@ -154,114 +156,114 @@[m
+                 </thead>[m
+                 <tbody>[m
+                   <tr>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       23[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       24[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       25[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       26[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       27[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       28[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       1[m
+                     </td>[m
+                   </tr>[m
+                   <tr>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       2[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       3[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       4[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       5[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       6[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       7[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       8[m
+                     </td>[m
+                   </tr>[m
+                   <tr>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       9[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       10[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       11[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       12[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       13[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       14[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       15[m
+                     </td>[m
+                   </tr>[m
+                   <tr>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       16[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       17[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       18[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       19[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       20[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       21[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       22[m
+                     </td>[m
+                   </tr>[m
+                   <tr>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       23[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       24[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--past">[m
+                       25[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-current calendar-month__day--current calendar-month__day--selected">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--current calendar-month__day--selected">[m
+                       26[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past calendar-month__day--selected">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--selected">[m
+                       27[m
+                     </td>[m
+[31m-                    <td class="calendar-month__day calendar-month__day-past calendar-month__day--selected">[m
+[32m+[m[32m                    <td class="calendar-month__day calendar-month__day--selected">[m
+                       28[m
+                     </td>[m
+                     <td class="calendar-month__day">[m
+[36m@@ -318,7 +320,7 @@[m
+                 <button class="plan-countries__country-remove" type="button" aria-label="Удалить старну"></button>[m
+                 <div class="plan-countries__pop-up plan-countries-pop-up">[m
+                   <div class="plan-countries-pop-up__header">[m
+[31m-                    <h3>Выберите страну</h3>[m
+[32m+[m[32m                    <h3 class="plan-countries-pop-up__title">Выберите страну</h3>[m
+                     <button class="plan-countries-pop-up__close" aria-label="Закрыть выбор страны"></button>[m
+                   </div>[m
+                   <table class="alphabet plan-countries-pop-up__alphabet">[m
+[1mdiff --git a/source/index.html b/source/index.html[m
+[1mindex f196363..290c1f9 100644[m
+[1m--- a/source/index.html[m
+[1m+++ b/source/index.html[m
+[36m@@ -215,13 +215,13 @@[m
+         </form>[m
+         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>[m
+         <div class="contacts interested__contacts">[m
+[31m-          <a class="contacts__phone" href="tel: +88005558628">8&nbsp;800&nbsp;555-86-28</a>[m
+[31m-          <a class="contacts__email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>[m
+[32m+[m[32m          <a class="contacts__phone contacts__phone--interested" href="tel: +88005558628">8&nbsp;800&nbsp;555-86-28</a>[m
+[32m+[m[32m          <a class="contacts__email contacts__email--interested" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>[m
+         </div>[m
+       </div>[m
+       <div class="address">[m
+         <h2 class="address__title">ул. большая конюшенная, 19/8</h2>[m
+[31m-        <button class="address__path">Проложить маршрут</button>[m
+[32m+[m[32m        <button class="address__path" type="button">Проложить маршрут</button>[m
+       </div>[m
+       <div class="map">[m
+         <img class="map__img" src="https://via.placeholder.com/320" width="320" height="320" alt="ул. большая конюшенная, 19/8">[m
+[1mdiff --git a/source/sass/blocks/contacts.scss b/source/sass/blocks/contacts.scss[m
+[1mindex fe398d5..6ef164b 100644[m
+[1m--- a/source/sass/blocks/contacts.scss[m
+[1m+++ b/source/sass/blocks/contacts.scss[m
+[36m@@ -2,4 +2,9 @@[m
+ .contacts__email {[m
+   color: $blue;[m
+   text-transform: uppercase;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m
+[32m+[m[32m  &--interested {[m
+[32m+[m[32m    color: $yellow;[m
+[32m+[m[32m  }[m
+ }[m
+[1mdiff --git a/source/sass/blocks/level.scss b/source/sass/blocks/level.scss[m
+[1mindex 40d71da..8e2f3f5 100644[m
+[1m--- a/source/sass/blocks/level.scss[m
+[1m+++ b/source/sass/blocks/level.scss[m
+[36m@@ -1,5 +1,9 @@[m
+ .level {[m
+   background-color: $black06;[m
+[32m+[m
+[32m+[m[32m  &--profile {[m
+[32m+[m[32m    background: none;[m
+[32m+[m[32m  }[m
+ }[m
+ [m
+ .level__percent {[m
+[36m@@ -7,10 +11,22 @@[m
+   line-height: 24px;[m
+   color: $white;[m
+   font-weight: 700;[m
+[32m+[m
+[32m+[m[32m  &--profile {[m
+[32m+[m[32m    font-size: $max-font-size;[m
+[32m+[m[32m    line-height: 38px;[m
+[32m+[m[32m    color: $blue-dark;[m
+[32m+[m[32m  }[m
+ }[m
+ [m
+ .level__text {[m
+   font-size: $smaller-font-size;[m
+   line-height: 14px;[m
+   color: $white;[m
+[32m+[m
+[32m+[m[32m  &--profile {[m
+[32m+[m[32m    font-size: $bigger-font-size;[m
+[32m+[m[32m    line-height: 22px;[m
+[32m+[m[32m    color: $grey;[m
+[32m+[m[32m  }[m
+ }[m
+[1mdiff --git a/source/sass/variables.scss b/source/sass/variables.scss[m
+[1mindex 66e1389..4a463f8 100644[m
+[1m--- a/source/sass/variables.scss[m
+[1m+++ b/source/sass/variables.scss[m
+[36m@@ -2,11 +2,17 @@[m
+ $black: #000000;[m
+ $black06: rgba(0, 0, 0, 0.6);[m
+ $blue: #192144;[m
+[32m+[m[32m$blue-lightest: #e2e5f2;[m
+ $blue-light: #1d2e5b;[m
+ $blue-dark: #161c35;[m
+[32m+[m[32m$grey-lightest: #d6daed;[m
+[32m+[m[32m$grey-lighter: #dfe3f0;[m
+[32m+[m[32m$grey-light: #d4d9eb;[m
+ $grey: #444444;[m
+[32m+[m[32m$grey03: rgba(68, 68, 68, 0.3);[m
+ $white: #ffffff;[m
+ $white-dark: #edeff6;[m
+[32m+[m[32m$orange-dark: #ff5c23;[m
+ $orange: #ff8d30;[m
+ $orange-light: #ffa530;[m
+ $orange-lighter: #ffbd30;[m
+[36m@@ -22,6 +28,7 @@[m [m$max-font-size: 38px;[m
+ $largest-font-size: 36px;[m
+ $larger-font-size: 30px;[m
+ $large-font-size: 24px;[m
+[32m+[m[32m$prelarge-font-size: 22px;[m
+ $biggest-font-size: 21px;[m
+ $prebiggest-font-size: 20px;[m
+ $bigger-font-size: 18px;[m

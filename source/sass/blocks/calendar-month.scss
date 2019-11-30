@@ -1,0 +1,25 @@
+.calendar-month__week {
+  font-size: $smaller-font-size;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--weekend {
+    color: $orange-dark;
+  }
+}
+
+.calendar-month__day {
+  font-size: $smaller-font-size;
+  line-height: 18px;
+  background-color: $white-dark;
+
+  &--past {
+    background-color: $white;
+    color: $grey03;
+  }
+
+  &--selected {
+    background-color: $blue-light;
+    color: $white;
+  }
+}

@@ -1,0 +1,10 @@
+.alphabet__char {
+  background-color: $white;
+  text-transform: uppercase;
+  color: $blue-light;
+
+  &--active {
+    background-color: $blue-light;
+    color: $white;
+  }
+}

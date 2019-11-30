@@ -1,0 +1,14 @@
+.plan-countries-pop-up__header {
+  background-color: $blue-light;
+}
+
+.plan-countries-pop-up__title {
+  font-size: $smaller-font-size;
+  line-height: 18px;
+  color: $white;
+  font-weight: 500;
+}
+
+.plan-countries-pop-up__list {
+  @include reset-list;
+}

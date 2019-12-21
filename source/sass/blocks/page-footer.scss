@@ -1,3 +1,15 @@
 .page-footer {
   background-color: $white;
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: block;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

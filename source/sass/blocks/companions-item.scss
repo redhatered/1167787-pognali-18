@@ -16,3 +16,9 @@
 .companions-item__tags {
   line-height: 18px;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .companions-item {
+    width: 290px;
+  }
+}

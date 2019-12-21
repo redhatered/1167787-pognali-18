@@ -10,4 +10,13 @@
 
 .tariffs__item {
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .tariffs__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

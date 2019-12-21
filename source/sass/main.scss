@@ -45,8 +45,23 @@ img {
 }
 
 .container {
-  width: 320px;
+  min-width: 320px;
   padding-right: 25px;
   padding-left: 25px;
   margin: 0 auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+
+@media (min-width: $breakpoint-desktop) {
+  .container {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

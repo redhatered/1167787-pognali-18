@@ -16,3 +16,30 @@
   color: $blue-light;
   font-weight: 700;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .directions__text-wrapper {
+    width: 50%;
+  }
+
+  .directions__all {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .directions__list {
+    width: 50%;
+    order: 1;
+  }
+
+  .directions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .directions__text-wrapper {
+    order: 2;
+  }
+}

@@ -3,8 +3,27 @@
   color: $blue;
   text-transform: uppercase;
   font-weight: 700;
+  width: 100%;
+  display: block;
 
   &--interested {
     color: $yellow;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .contacts {
+    order: 1;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .contacts {
+    order: 1;
+    display: flex;
+  }
+
+  .contacts__text {
+    display: none;
   }
 }

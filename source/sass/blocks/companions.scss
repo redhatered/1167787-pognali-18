@@ -30,3 +30,26 @@
 .companions__list {
   @include reset-list;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .companions__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .companions__text-wrapper {
+    width: 50%;
+  }
+
+  .companions__list {
+    width: 50%;
+  }
+
+  .companions {
+    display: flex;
+    justify-content: space-between;
+  }
+}

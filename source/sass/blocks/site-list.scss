@@ -5,8 +5,24 @@
   text-transform: uppercase;
   color: $blue;
   font-weight: 500;
+  width: 100%;
 }
 
 .site-list__link {
   color: inherit;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .site-list {
+    order: 1;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .site-list {
+    order: initial;
+    width: 760px;
+    display: flex;
+    justify-content: flex-start;
+  }
 }

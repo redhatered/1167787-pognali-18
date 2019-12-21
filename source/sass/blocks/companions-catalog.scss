@@ -17,3 +17,31 @@
 .companions-catalog__next {
   background-color: $white;
 }
+
+.companions-catalog__pages {
+  display: none;
+}
+
+.companions-catalog__pagination {
+  background-color: #ffffff;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .companions-catalog__pages {
+    @include reset-list;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .companions-catalog__pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .companions-catalog {
+    order: 1;
+    flex-grow: 1;
+  }
+}

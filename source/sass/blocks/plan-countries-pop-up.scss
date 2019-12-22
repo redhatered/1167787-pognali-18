@@ -12,3 +12,7 @@
 .plan-countries-pop-up__list {
   @include reset-list;
 }
+
+.plan-countries-pop-up {
+  display: none;
+}

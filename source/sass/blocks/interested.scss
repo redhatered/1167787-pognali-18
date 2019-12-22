@@ -28,3 +28,13 @@
 .interested__btn {
   background-color: $yellow;
 }
+
+.interested__btn-text {
+  display: none;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .interested__btn-text {
+    display: block;
+  }
+}

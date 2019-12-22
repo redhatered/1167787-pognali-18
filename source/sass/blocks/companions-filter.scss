@@ -35,9 +35,22 @@
   line-height: 30px;
 }
 
+@media (min-width: $breakpoint-tablet) {
+  .companions-filter__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 @media (min-width: $breakpoint-desktop) {
   .companions-filter {
     width: 280px;
     order: 2;
+  }
+
+  .companions-filter__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }

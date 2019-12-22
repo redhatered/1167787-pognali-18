@@ -37,3 +37,53 @@
 .countries-filter__list-link {
   color: $grey;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .countries-filter__title {
+    display: none;
+  }
+
+  .countries-filter__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .countries-filter__continents {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .countries-filter__toggle {
+    order: 2;
+  }
+
+  .countries-filter__table-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .countries-filter__toggle--bottom {
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .countries-filter__title {
+    display: block;
+  }
+
+  .countries-filter__wrapper {
+    justify-content: flex-start;
+  }
+
+  .countries-filter__continents {
+    justify-content: flex-start;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .countries-filter__list {
+    display: none;
+  }
+}

@@ -1,3 +1,20 @@
 .plan-controls {
   @include reset-list;
+  position: relative;
+}
+
+.plan-controls__text {
+  display: none;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .plan-controls__text {
+    display: block;
+  }
+
+  .plan-controls {
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
 }

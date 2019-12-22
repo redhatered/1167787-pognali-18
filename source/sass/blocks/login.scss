@@ -9,3 +9,10 @@
   text-align: center;
   display: block;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .login {
+    width: auto;
+    display: initial;
+  }
+}

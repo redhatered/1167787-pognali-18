@@ -8,10 +8,55 @@
   color: $blue-dark;
   background-color: $grey-lighter;
   text-transform: uppercase;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
 }
 
-.tags__title {
-  line-height: 18px;
-  color: $blue-light;
-  text-transform: uppercase;
+.profile {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .profile__level {
+    order: 0;
+  }
+
+  .profile__image {
+    order: 2;
+  }
+
+  .profile__change-image {
+    order: 2;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .profile__image {
+    order: initial;
+    position: absolute;
+    right: 0;
+    top: -100px;
+  }
+
+  .profile__change-image {
+    order: initial;
+    width: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .profile__level {
+    order: initial;
+    position: absolute;
+    right: 150px;
+    top: -60px;
+  }
 }

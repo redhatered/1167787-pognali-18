@@ -35,3 +35,47 @@
   color: $blue-dark;
   font-weight: 700;
 }
+
+.plan-steps__controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .plan-steps__wrapper-input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .plan-steps__children {
+    order: 1;
+  }
+
+  .plan-steps__quantity-input:first-child {
+    order: 0;
+  }
+
+  .plan-steps__quantity-input {
+    order: 2;
+  }
+
+  .plan-steps__controls {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .plan-steps__wrapper-input {
+    flex-direction: row;
+  }
+
+  .plan-steps__quantity-input {
+    width: 50%;
+  }
+
+  .plan-steps__children {
+    width: 50%;
+  }
+}

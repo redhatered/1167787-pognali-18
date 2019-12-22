@@ -10,11 +10,6 @@
     display: flex;
     justify-content: flex-end;
   }
-
-  .login {
-    width: auto;
-    display: initial;
-  }
 }
 
 @media (min-width: $breakpoint-desktop) {

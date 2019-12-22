@@ -44,3 +44,19 @@
   font-weight: 500;
   opacity: 0.3;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .my-plans__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .my-plans__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

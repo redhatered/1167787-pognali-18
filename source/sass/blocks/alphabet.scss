@@ -1,10 +1,42 @@
-.alphabet__char {
+.alphabet__char-block {
   background-color: $white;
-  text-transform: uppercase;
   color: $blue-light;
 
   &--active {
     background-color: $blue-light;
     color: $white;
+  }
+}
+
+.alphabet__char {
+  text-transform: uppercase;
+}
+
+.alphabet__filter-list {
+  display: none;
+
+  @include reset-list;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .alphabet__filter-list {
+    display: block;
+  }
+
+  .alphabet__char-block {
+    background-color: initial;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &--active {
+      background-color: initial;
+      color: $blue-light;
+    }
+  }
+
+  .alphabet__row {
+    display: flex;
   }
 }

@@ -9,7 +9,7 @@
   <body>
   <header class="page-header container">
     <nav class="main-nav">
-      <a class="main-nav__logo">
+      <a class="main-nav__logo" href="#">
         <img class="main-nav__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Переключить меню"></button>
@@ -55,143 +55,681 @@
     </div>
     <form method="get" action="https://echo.htmlacademy.ru">
       <section class="countries-filter">
-        <div class="countries-filter__header">
+        <div class="countries-filter__wrapper">
           <h2 class="countries-filter__title">фильтрация по странам</h2>
-          <button class="countries-filter__toggle" aria-label="Переключить фильтр"></button>
+          <button class="countries-filter__toggle countries-filter__toggle" aria-label="Переключить фильтр">Свернуть</button>
+          <ul class="countries-filter__continents">
+            <li class="countries-filter__continent">
+              <a class="countries-filter__continent-link countries-filter__continent-link--active" href="/europe">Европа</a>
+            </li>
+            <li class="countries-filter__continent">
+              <a class="countries-filter__continent-link" href="/europe">Азия</a>
+            </li>
+            <li class="countries-filter__continent">
+              <a class="countries-filter__continent-link" href="/europe">Америка</a>
+            </li>
+            <li class="countries-filter__continent">
+              <a class="countries-filter__continent-link" href="/europe">Острова</a>
+            </li>
+          </ul>
         </div>
-        <ul class="countries-filter__continents">
-          <li class="countries-filter__continent">
-            <a class="countries-filter__continent-link countries-filter__continent-link--active" href="/europe">Европа</a>
-          </li>
-          <li class="countries-filter__continent">
-            <a class="countries-filter__continent-link" href="/europe">Азия</a>
-          </li>
-          <li class="countries-filter__continent">
-            <a class="countries-filter__continent-link" href="/europe">Америка</a>
-          </li>
-          <li class="countries-filter__continent">
-            <a class="countries-filter__continent-link" href="/europe">Острова</a>
-          </li>
-        </ul>
-        <table class="countries-filter__alphabet alphabet">
-          <tbody>
-            <tr>
-              <td class="alphabet__char alphabet__char--active">
-                A
-              </td>
-              <td class="alphabet__char">
-                Б
-              </td>
-              <td class="alphabet__char">
-                В
-              </td>
-              <td class="alphabet__char">
-                Г
-              </td>
-              <td class="alphabet__char">
-                Д
-              </td>
-            </tr>
-            <tr>
-              <td class="alphabet__char">
-                Е
-              </td>
-              <td class="alphabet__char">
-                З
-              </td>
-              <td class="alphabet__char">
-                И
-              </td>
-              <td class="alphabet__char">
-                К
-              </td>
-              <td class="alphabet__char">
-                Л
-              </td>
-            </tr>
-            <tr>
-              <td class="alphabet__char">
-                М
-              </td>
-              <td class="alphabet__char">
-                Н
-              </td>
-              <td class="alphabet__char">
-                О
-              </td>
-              <td class="alphabet__char">
-                П
-              </td>
-              <td class="alphabet__char">
-                Р
-              </td>
-            </tr>
-            <tr>
-              <td class="alphabet__char">
-                С
-              </td>
-              <td class="alphabet__char">
-                Т
-              </td>
-              <td class="alphabet__char">
-                У
-              </td>
-              <td class="alphabet__char">
-                Ф
-              </td>
-              <td class="alphabet__char">
-                Х
-              </td>
-            </tr>
-            <tr>
-              <td class="alphabet__char">
-                Ч
-              </td>
-              <td class="alphabet__char">
-                Ш
-              </td>
-              <td class="alphabet__char">
-                Э
-              </td>
-              <td class="alphabet__char">
-                Ю
-              </td>
-              <td class="alphabet__char">
-                Я
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <ul class="countries-filter__list">
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Афганистан</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Албания</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Алжир</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Андорра</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Аргентина</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Армения</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Австралия</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Австрия</a>
-          </li>
-          <li class="countries-filter__list-item">
-            <a class="countries-filter__list-link" href="/europe/france">Азербайджан</a>
-          </li>
-        </ul>
-        <button class="countries-filter__toggle" type="button">Свернуть</button>
+        <div class="countries-filter__table-wrapper">
+          <table class="countries-filter__alphabet alphabet">
+            <tbody>
+              <tr class="alphabet__row">
+                <td class="alphabet__char-block"><!--alphabet__char-block--active-->
+                  <span class="alphabet__char">A</span>
+                    <ul class="alphabet__filter-list">
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Афганистан</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Албания</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Алжир</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Андорра</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Аргентина</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Армения</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Австралия</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Австрия</a>
+                      </li>
+                      <li class="alphabet__filter-list-item">
+                        <a class="alphabet__filter-list-link" href="/europe/france">Азербайджан</a>
+                      </li>
+                    </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Б</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Багамские Острова</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бангладеш</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Барбадос</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бахрейн</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Белоруссия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Белиз</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бельгия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бенин</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Болгария</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Боливия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Босния и Герцеговина</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ботсвана</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бразилия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бруней</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Буркина-Фасо</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бурунди</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Бутан</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">В</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Вануату</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Великобритания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Венгрия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Венесуэла</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Восточный Тимор</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Вьетнам</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Г</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Габон</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гаити</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гайана</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гамбия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гана</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гватемала</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гвинея</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гвинея-Бисау</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Германия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гондурас</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Гренада</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Греция</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Грузия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Д</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Дания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Джибути</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Доминика</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Доминикана</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet__row">
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Е</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Египет</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">З</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Замбия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Зимбабве</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">И</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Израиль</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Индия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Индонезия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Иордания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ирак</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Иран</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ирландия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Исландия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Испания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Италия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">К</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Кабо-Верде</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Казахстан</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Камбоджа</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Камерун</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Канада</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Катар</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Кения</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Кипр</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Киргизия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Кирибати</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Китай</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Колумбия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Л</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Лаос</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Латвия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Лесото</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Либерия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ливан</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ливия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Литва</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Лихтенштейн</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Люксембург</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet__row">
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">М</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Маврикий</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мавритания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мадагаскар</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Малави</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Малайзия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мали</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мальдивы</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мальта</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Марокко</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Мексика</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Н</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Намибия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Науру</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Непал</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Нигер</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Нигерия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Нидерланды</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Никарагуа</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Новая Зеландия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Норвегия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">О</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">ОАЭ</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Оман</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">П</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Пакистан</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Палау</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Панама</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Папуа — Новая Гвинея</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Парагвай</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Перу</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Польша</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Португалия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Р</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Руанда</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Румыния</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Россия</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet__row">
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">С</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сальвадор</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Самоа</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сан-Марино</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Саудовская Аравия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сейшелы</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сенегал</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сербия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сингапур</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Сирия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Словакия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Словения</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">США</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Т</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Таджикистан</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Таиланд</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Танзания</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Того</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Тонга</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Тринидад и Тобаго</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Тувалу</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Тунис</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Туркмения</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Турция</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">У</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Уганда</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Узбекистан</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Украина</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Уругвай</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Ф</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Фиджи</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Филиппины</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Финляндия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Франция</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Х</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Хорватия</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet__row">
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Ч</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Чад</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Черногория</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Чехия</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Чили</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Ш</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Швейцария</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Швеция</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Шри-Ланка</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Э</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Эквадор</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Эритрея</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Эсватини</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Эстония</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Эфиопия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Ю</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">ЮАР</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Южный Судан</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet__char-block">
+                  <span class="alphabet__char">Я</span>
+                  <ul class="alphabet__filter-list">
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Ямайка</a>
+                    </li>
+                    <li class="alphabet__filter-list-item">
+                      <a class="alphabet__filter-list-link" href="/europe/france">Япония</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="countries-filter__list">
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Афганистан</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Албания</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Алжир</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Андорра</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Аргентина</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Армения</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Австралия</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Австрия</a>
+            </li>
+            <li class="countries-filter__list-item">
+              <a class="countries-filter__list-link" href="/europe/france">Азербайджан</a>
+            </li>
+          </ul>
+        </div>
+        <button class="countries-filter__toggle--bottom" type="button">Свернуть</button>
       </section>
       <div class="companions-wrapper">
         <section class="companions-filter">

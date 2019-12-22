@@ -14,3 +14,17 @@
   color: $white;
   font-weight: 700;
 }
+
+.about__btn {
+  display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .about {
+    width: 50%;
+  }
+
+  .about__btn {
+    display: block;
+  }
+}

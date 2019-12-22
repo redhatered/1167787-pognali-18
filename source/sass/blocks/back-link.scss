@@ -1,0 +1,9 @@
+.back-link {
+  display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .back-link {
+    display: block;
+  }
+}

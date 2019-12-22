@@ -34,3 +34,10 @@
   font-size: $big-font-size;
   line-height: 30px;
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .companions-filter {
+    width: 280px;
+    order: 2;
+  }
+}

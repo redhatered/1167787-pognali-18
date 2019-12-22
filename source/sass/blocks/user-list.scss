@@ -1,3 +1,27 @@
 .user-list {
   @include reset-list;
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .user-list {
+    width: 33%;
+    order: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login {
+    width: auto;
+    display: initial;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .user-list {
+    width: 300px;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+  }
 }

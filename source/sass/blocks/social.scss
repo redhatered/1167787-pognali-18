@@ -1,3 +1,21 @@
 .social__list {
   @include reset-list;
+  height: 40px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .social {
+    order: 1;
+  }
+
+  .page-footer__social {
+    order: initial;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .social {
+    order: initial;
+    display: none;
+  }
 }

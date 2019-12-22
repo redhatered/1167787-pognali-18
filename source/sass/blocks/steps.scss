@@ -21,3 +21,21 @@
 .steps__item:nth-child(4n) {
   background-color: $yellow;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .steps__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .steps__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .steps__item {
+    width: auto;
+    flex-grow: 1;
+  }
+}

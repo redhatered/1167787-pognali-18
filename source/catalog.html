@@ -8,20 +8,20 @@
   </head>
   <body>
   <header class="page-header container">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали?">
+      </a>
+      <button class="main-nav__toggle" type="button" aria-label="Переключить меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="about.html">О сервисе</a>
+          <a class="site-list__link" href="about.html">О сервисе</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Направления</a>
+          <a class="site-list__link" href="form.html">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Попутчики</a>
+          <a class="site-list__link" href="catalog.html">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -30,8 +30,8 @@
         </li>
       </ul>
       <div class="contacts">
-        <a class="contacts__phone" href="tel: +88005558628">8&nbsp;800&nbsp;555-86-28</a>
-        <a class="contacts__email" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contacts__phone" href="tel: +88005558628"><span class="contacts__text">8&nbsp;800&nbsp;555-86-28</span></a>
+        <a class="contacts__email" href="mailto: mail@htmlacademy.ru"><span class="contacts__text">mail@htmlacademy.ru</span></a>
       </div>
       <div class="social">
         <ul class="social__list">
@@ -49,7 +49,10 @@
     </nav>
   </header>
   <main class="page-main container">
-    <h1 class="main-title">Попутчики</h1>
+    <div class="title-container">
+      <h1 class="main-title">Попутчики</h1>
+      <a class="back-link" href="/">На главную</a>
+    </div>
     <form method="get" action="https://echo.htmlacademy.ru">
       <section class="countries-filter">
         <div class="countries-filter__header">
@@ -190,270 +193,288 @@
         </ul>
         <button class="countries-filter__toggle" type="button">Свернуть</button>
       </section>
-      <section class="companions-filter">
-          <h2 class="companions-filter__text">Подберите идеального попутчика</h2>
-          <fieldset class="companions-filter__group">
-            <legend class="companions-filter__title">Хобби</legend>
-            <ul class="companions-filter__list">
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox11" name="properties1" value="1" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox11">Тяжелый рок</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox12" name="properties1" value="2">
-                <label class="companions-filter__label-checkbox" for="checkbox12">Русский рэп</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox13" name="properties1" value="3" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox13">Евроденс</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__group">
-            <legend class="companions-filter__title">Музыка</legend>
-            <ul class="companions-filter__list">
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox21" name="properties2" value="1" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox21">Тяжелый рок</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox22" name="properties2" value="2">
-                <label class="companions-filter__label-checkbox" for="checkbox22">Русский рэп</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox23" name="properties2" value="3" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox23">Евроденс</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__group">
-            <legend class="companions-filter__title">Еда</legend>
-            <ul class="companions-filter__list">
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox31" name="properties3" value="1" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox31">Тяжелый рок</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox32" name="properties3" value="2">
-                <label class="companions-filter__label-checkbox" for="checkbox32">Русский рэп</label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox33" name="properties3" value="3" checked>
-                <label class="companions-filter__label-checkbox" for="checkbox33">Евроденс</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__group">
-            <legend class="companions-filter__title">Транмпорт</legend>
-            <ul class="companions-filter__list">
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox41" name="properties4" value="1" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--air" for="checkbox41" aria-label="Самолет"></label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox42" name="properties4" value="2">
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--bus" for="checkbox42" aria-label="Автобус"></label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox43" name="properties4" value="3" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--buy" for="checkbox43" aria-label="Велосипед"></label>
-              </li>
-              <li class="companions-filter__list-item">
-                <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox44" name="properties4" value="3" checked>
-                <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--walk" for="checkbox44" aria-label="Пешком"></label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="companions-filter__group">
-            <legend class="companions-filter__title">Левел</legend>
-            <div class="range companions-filter__range">
-              <div class="range__levels">
-                <input class="range__min" type="text" id="range-min" name="range-min">
-                <label class="visually-hidden" for="range-min">минимальный левел</label>
-                <input class="range__max" type="text" id="range-max" name="range-max">
-                <label class="visually-hidden" for="range-max">максимальный левел</label>
-              </div>
-              <div class="range__controls">
-                <div class="range__scale">
-                  <div class="range__bar"></div>
-                </div>
-                <div class="range__toggle range__toggle--min" aria-label="Минимальный левел"></div>
-                <div class="range__toggle range__toggle--max" aria-label="Максимальный левел"></div>
-              </div>
-            </div>
-          </fieldset>
-          <button class="companions-filter__submit" type="submit">Показать</button>
-      </section>
-    </form>
-    <section class="companions-catalog">
-      <h2 class="visually-hidden">Попутчики</h2>
-      <ul class="companions-catalog__list">
-        <li class="companions-catalog__item companions-catalog-item">
-          <div class="companions-catalog-item__image-wrapper">
-            <a class="companions-catalog-item__image-link" href="profile.html">
-              <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
-            </a>
-            <button class="companions-catalog-item__like companions-catalog-item__like--active" type="button" aria-label="Нравится"></button>
-          </div>
-          <div class="companions-catalog-item__name-wrapper">
-            <a class="companions-catalog-item__name-link" href="profile.html">
-              <h3 class="companions-catalog-item__name">Таня Фирсова</h3>
-            </a>
-            <p class="companions-catalog-item__likes">1,5 М</p>
-            <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
-          </div>
-          <p class="companions-catalog-item__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
-          <ul class="companions-catalog-item__countries">
-            <li class="companions-catalog-item__country companions-catalog-item__country--sri">Шри-Ланка</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--tai">Тайланд</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--sey">Сейшелы</li>
-          </ul>
-          <div class="companions-catalog-item__tran-level-wrapper">
-            <div class="companions-catalog-item__tran-wrapper">
-              <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="transport-list companions-catalog-item__transport-list">
-                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
-                <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
-                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
-                <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
+      <div class="companions-wrapper">
+        <section class="companions-filter">
+            <h2 class="companions-filter__text">Подберите идеального попутчика</h2>
+            <fieldset class="companions-filter__group">
+              <legend class="companions-filter__title">Хобби</legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox11" name="properties1" value="1" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox11">Тяжелый рок</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox12" name="properties1" value="2">
+                  <label class="companions-filter__label-checkbox" for="checkbox12">Русский рэп</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox13" name="properties1" value="3" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox13">Евроденс</label>
+                </li>
               </ul>
+            </fieldset>
+            <fieldset class="companions-filter__group">
+              <legend class="companions-filter__title">Музыка</legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox21" name="properties2" value="1" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox21">Тяжелый рок</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox22" name="properties2" value="2">
+                  <label class="companions-filter__label-checkbox" for="checkbox22">Русский рэп</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox23" name="properties2" value="3" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox23">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__group">
+              <legend class="companions-filter__title">Еда</legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox31" name="properties3" value="1" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox31">Тяжелый рок</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox32" name="properties3" value="2">
+                  <label class="companions-filter__label-checkbox" for="checkbox32">Русский рэп</label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox33" name="properties3" value="3" checked>
+                  <label class="companions-filter__label-checkbox" for="checkbox33">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__group">
+              <legend class="companions-filter__title">Транмпорт</legend>
+              <ul class="companions-filter__list">
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox41" name="properties4" value="1" checked>
+                  <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--air" for="checkbox41" aria-label="Самолет"></label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox42" name="properties4" value="2">
+                  <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--bus" for="checkbox42" aria-label="Автобус"></label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox43" name="properties4" value="3" checked>
+                  <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--buy" for="checkbox43" aria-label="Велосипед"></label>
+                </li>
+                <li class="companions-filter__list-item">
+                  <input class="companions-filter__input visually-hidden" type="checkbox" id="checkbox44" name="properties4" value="3" checked>
+                  <label class="companions-filter__label-checkbox companions-filter__label-checkbox--img companions-filter__label-checkbox--walk" for="checkbox44" aria-label="Пешком"></label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="companions-filter__group">
+              <legend class="companions-filter__title">Левел</legend>
+              <div class="range companions-filter__range">
+                <div class="range__levels">
+                  <input class="range__min" type="text" id="range-min" name="range-min">
+                  <label class="visually-hidden" for="range-min">минимальный левел</label>
+                  <input class="range__max" type="text" id="range-max" name="range-max">
+                  <label class="visually-hidden" for="range-max">максимальный левел</label>
+                </div>
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle--min" aria-label="Минимальный левел"></div>
+                  <div class="range__toggle range__toggle--max" aria-label="Максимальный левел"></div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="companions-filter__submit" type="submit">Показать</button>
+        </section>
+        <section class="companions-catalog">
+        <h2 class="visually-hidden">Попутчики</h2>
+        <ul class="companions-catalog__list">
+          <li class="companions-catalog__item companions-catalog-item">
+            <div class="companions-catalog-item__image-wrapper">
+              <a class="companions-catalog-item__image-link" href="profile.html">
+                <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+              </a>
+              <button class="companions-catalog-item__like companions-catalog-item__like--active" type="button" aria-label="Нравится"></button>
             </div>
-            <div class="companions-catalog-item__tran-level">
-              <p class="companions-catalog-item__level-title">левел:</p>
-              <span class="companions-catalog-item__level">
+            <div class="companions-catalog-item__name-wrapper">
+              <a class="companions-catalog-item__name-link" href="profile.html">
+                <h3 class="companions-catalog-item__name">Таня Фирсова</h3>
+              </a>
+              <p class="companions-catalog-item__likes">1,5 М</p>
+              <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
+            </div>
+            <p class="companions-catalog-item__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+            <ul class="companions-catalog-item__countries">
+              <li class="companions-catalog-item__country companions-catalog-item__country--sri">Шри-Ланка</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--tai">Тайланд</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--sey">Сейшелы</li>
+            </ul>
+            <div class="companions-catalog-item__tran-level-wrapper">
+              <div class="companions-catalog-item__tran-wrapper">
+                <p class="companions-catalog-item__transport-title">транспорт:</p>
+                <ul class="transport-list companions-catalog-item__transport-list">
+                  <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                  <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
+                  <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                  <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="companions-catalog-item__tran-level">
+                <p class="companions-catalog-item__level-title">левел:</p>
+                <span class="companions-catalog-item__level">
                 99
               </span>
+              </div>
             </div>
-          </div>
-          <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
-        </li>
-        <li class="companions-catalog__item companions-catalog-item">
-          <div class="companions-catalog-item__image-wrapper">
-            <a class="companions-catalog-item__image-link" href="profile.html">
-              <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
-            </a>
-            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
-          </div>
-          <div class="companions-catalog-item__name-wrapper">
-            <a class="companions-catalog-item__name-link" href="profile.html">
-              <h3 class="companions-catalog-item__name">Петя Демин</h3>
-            </a>
-            <p class="companions-catalog-item__likes">150</p>
-            <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
-          </div>
-          <p class="companions-catalog-item__tags">#бургер #бар #футбол #концерт #крафт</p>
-          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
-          <ul class="companions-catalog-item__countries">
-            <li class="companions-catalog-item__country companions-catalog-item__country--bel">Бельгия</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--cze">Чехия</li>
-          </ul>
-          <div class="companions-catalog-item__tran-level-wrapper">
-            <div class="companions-catalog-item__tran-wrapper">
-              <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="transport-list companions-catalog-item__transport-list">
-                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
-                <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
-                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
-                <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
-              </ul>
+            <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
+          </li>
+          <li class="companions-catalog__item companions-catalog-item">
+            <div class="companions-catalog-item__image-wrapper">
+              <a class="companions-catalog-item__image-link" href="profile.html">
+                <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+              </a>
+              <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
             </div>
-            <div class="companions-catalog-item__tran-level">
-              <p class="companions-catalog-item__level-title">левел:</p>
-              <span class="companions-catalog-item__level">
+            <div class="companions-catalog-item__name-wrapper">
+              <a class="companions-catalog-item__name-link" href="profile.html">
+                <h3 class="companions-catalog-item__name">Петя Демин</h3>
+              </a>
+              <p class="companions-catalog-item__likes">150</p>
+              <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
+            </div>
+            <p class="companions-catalog-item__tags">#бургер #бар #футбол #концерт #крафт</p>
+            <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+            <ul class="companions-catalog-item__countries">
+              <li class="companions-catalog-item__country companions-catalog-item__country--bel">Бельгия</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--cze">Чехия</li>
+            </ul>
+            <div class="companions-catalog-item__tran-level-wrapper">
+              <div class="companions-catalog-item__tran-wrapper">
+                <p class="companions-catalog-item__transport-title">транспорт:</p>
+                <ul class="transport-list companions-catalog-item__transport-list">
+                  <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                  <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
+                  <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                  <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="companions-catalog-item__tran-level">
+                <p class="companions-catalog-item__level-title">левел:</p>
+                <span class="companions-catalog-item__level">
                 80
               </span>
+              </div>
             </div>
-          </div>
-          <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
-        </li>
-        <li class="companions-catalog__item companions-catalog-item">
-          <div class="companions-catalog-item__image-wrapper">
-            <a class="companions-catalog-item__image-link" href="profile.html">
-              <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
-            </a>
-            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
-          </div>
-          <div class="companions-catalog-item__name-wrapper">
-            <a class="companions-catalog-item__name-link" href="profile.html">
-              <h3 class="companions-catalog-item__name">Марк Смолов</h3>
-            </a>
-            <p class="companions-catalog-item__likes">1700</p>
-            <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
-          </div>
-          <p class="companions-catalog-item__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
-          <ul class="companions-catalog-item__countries">
-            <li class="companions-catalog-item__country companions-catalog-item__country--usa">США</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--aus">Австралия</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--dom">Доминикана</li>
-          </ul>
-          <div class="companions-catalog-item__tran-level-wrapper">
-            <div class="companions-catalog-item__tran-wrapper">
-              <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="transport-list companions-catalog-item__transport-list">
-                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
-                <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
-                <li class="transport-list__item transport-list__item--buy transport-list__item--active" aria-label="Велосипед"></li>
-                <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
-              </ul>
+            <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
+          </li>
+          <li class="companions-catalog__item companions-catalog-item">
+            <div class="companions-catalog-item__image-wrapper">
+              <a class="companions-catalog-item__image-link" href="profile.html">
+                <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+              </a>
+              <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
             </div>
-            <div class="companions-catalog-item__tran-level">
-              <p class="companions-catalog-item__level-title">левел:</p>
-              <span class="companions-catalog-item__level">
+            <div class="companions-catalog-item__name-wrapper">
+              <a class="companions-catalog-item__name-link" href="profile.html">
+                <h3 class="companions-catalog-item__name">Марк Смолов</h3>
+              </a>
+              <p class="companions-catalog-item__likes">1700</p>
+              <span class="companions-catalog-item__status companions-catalog-item__status--offline" aria-label="Офлайн"></span>
+            </div>
+            <p class="companions-catalog-item__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+            <ul class="companions-catalog-item__countries">
+              <li class="companions-catalog-item__country companions-catalog-item__country--usa">США</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--aus">Австралия</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--dom">Доминикана</li>
+            </ul>
+            <div class="companions-catalog-item__tran-level-wrapper">
+              <div class="companions-catalog-item__tran-wrapper">
+                <p class="companions-catalog-item__transport-title">транспорт:</p>
+                <ul class="transport-list companions-catalog-item__transport-list">
+                  <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                  <li class="transport-list__item transport-list__item--bus" aria-label="Автобус"></li>
+                  <li class="transport-list__item transport-list__item--buy transport-list__item--active" aria-label="Велосипед"></li>
+                  <li class="transport-list__item transport-list__item--walk transport-list__item--active" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="companions-catalog-item__tran-level">
+                <p class="companions-catalog-item__level-title">левел:</p>
+                <span class="companions-catalog-item__level">
                 25
               </span>
+              </div>
             </div>
-          </div>
-          <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
-        </li>
-        <li class="companions-catalog__item companions-catalog-item">
-          <div class="companions-catalog-item__image-wrapper">
-            <a class="companions-catalog-item__image-link" href="profile.html">
-              <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
-            </a>
-            <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
-          </div>
-          <div class="companions-catalog-item__name-wrapper">
-            <a class="companions-catalog-item__name-link" href="profile.html">
-              <h3 class="companions-catalog-item__name">Лариса Роговая</h3>
-            </a>
-            <p class="companions-catalog-item__likes">23</p>
-            <span class="companions-catalog-item__status companions-catalog-item__status--online" aria-label="Онлайн"></span>
-          </div>
-          <p class="companions-catalog-item__tags">#образование #карьера #учеба #линкедин
-          </p>
-          <p class="companions-catalog-item__countries-title">хочет посетить:</p>
-          <ul class="companions-catalog-item__countries">
-            <li class="companions-catalog-item__country companions-catalog-item__country--uk">Велиобритания</li>
-            <li class="companions-catalog-item__country companions-catalog-item__country--ger">Германия</li>
-          </ul>
-          <div class="companions-catalog-item__tran-level-wrapper">
-            <div class="companions-catalog-item__tran-wrapper">
-              <p class="companions-catalog-item__transport-title">транспорт:</p>
-              <ul class="transport-list companions-catalog-item__transport-list">
-                <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
-                <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
-                <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
-                <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
-              </ul>
+            <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
+          </li>
+          <li class="companions-catalog__item companions-catalog-item">
+            <div class="companions-catalog-item__image-wrapper">
+              <a class="companions-catalog-item__image-link" href="profile.html">
+                <img class="companions-catalog-item__image" src="https://via.placeholder.com/70" width="70" height="70" alt="Компаньен">
+              </a>
+              <button class="companions-catalog-item__like" type="button" aria-label="Нравится"></button>
             </div>
-            <div class="companions-catalog-item__tran-level">
-              <p class="companions-catalog-item__level-title">левел:</p>
-              <span class="companions-catalog-item__level">
+            <div class="companions-catalog-item__name-wrapper">
+              <a class="companions-catalog-item__name-link" href="profile.html">
+                <h3 class="companions-catalog-item__name">Лариса Роговая</h3>
+              </a>
+              <p class="companions-catalog-item__likes">23</p>
+              <span class="companions-catalog-item__status companions-catalog-item__status--online" aria-label="Онлайн"></span>
+            </div>
+            <p class="companions-catalog-item__tags">#образование #карьера #учеба #линкедин
+            </p>
+            <p class="companions-catalog-item__countries-title">хочет посетить:</p>
+            <ul class="companions-catalog-item__countries">
+              <li class="companions-catalog-item__country companions-catalog-item__country--uk">Велиобритания</li>
+              <li class="companions-catalog-item__country companions-catalog-item__country--ger">Германия</li>
+            </ul>
+            <div class="companions-catalog-item__tran-level-wrapper">
+              <div class="companions-catalog-item__tran-wrapper">
+                <p class="companions-catalog-item__transport-title">транспорт:</p>
+                <ul class="transport-list companions-catalog-item__transport-list">
+                  <li class="transport-list__item transport-list__item--air transport-list__item--active" aria-label="Самолет"></li>
+                  <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-label="Автобус"></li>
+                  <li class="transport-list__item transport-list__item--buy" aria-label="Велосипед"></li>
+                  <li class="transport-list__item transport-list__item--walk" aria-label="Пешком"></li>
+                </ul>
+              </div>
+              <div class="companions-catalog-item__tran-level">
+                <p class="companions-catalog-item__level-title">левел:</p>
+                <span class="companions-catalog-item__level">
                 50
               </span>
+              </div>
             </div>
+            <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
+          </li>
+        </ul>
+        <a class="companions-catalog__all" href="companions.html">Показать еще</a>
+        <div class="companions-catalog__pagination">
+          <ul class="companions-catalog__pages">
+            <li>
+              <a class="companions-catalog__page" href="#">1</a>
+            </li>
+            <li>
+              <a class="companions-catalog__page" href="#">2</a>
+            </li>
+            <li>
+              <a class="companions-catalog__page" href="#">3</a>
+            </li>
+            <li>
+              <a class="companions-catalog__page" href="#">4</a>
+            </li>
+          </ul>
+          <div class="companions-catalog__pagination-controls">
+            <a class="companions-catalog__prev" href="page.html" aria-label="Предыдущая страница"></a>
+            <a class="companions-catalog__next"  href="page.html" aria-label="Следующая страница"></a>
           </div>
-          <a class="companions-catalog-item__call" href="call.html">Позвать!</a>
-        </li>
-      </ul>
-      <a class="companions-catalog__all" href="companions.html">Показать еще</a>
-      <div class="companions-catalog__pagination">
-        <a class="companions-catalog__prev" href="page.html" aria-label="Предыдущая страница"></a>
-        <a class="companions-catalog__next"  href="page.html" aria-label="Следующая страница"></a>
+        </div>
+      </section>
       </div>
-    </section>
+    </form>
   </main>
   <footer class="page-footer container">
     <a class="page-footer__logo">
